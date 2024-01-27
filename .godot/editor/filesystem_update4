@@ -1,0 +1,9 @@
+res://Player/Player.tscn
+res://Player/Player.gd
+res://World/world.tscn
+res://BG/BG.tscn
+res://Animals/GP/GP.tscn
+res://BG/BG.gd
+res://GP.gd
+res://Animals/GP/GP.gd
+res://Animals/GP/PlayerDetection.gd

@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=3 uid="uid://fx17s7mjud88"]
+
+[ext_resource type="Script" path="res://BG/BG.gd" id="1_8l7eb"]
+[ext_resource type="Texture2D" uid="uid://s54lvw23mkya" path="res://Player/sunny-land-phaser-project/sunny-land/assets/environment/back.png" id="1_b1xgr"]
+[ext_resource type="Texture2D" uid="uid://rgcnkd6q8s5u" path="res://Player/sunny-land-phaser-project/sunny-land/assets/environment/middle.png" id="2_pv1wt"]
+
+[node name="BG" type="ParallaxBackground"]
+script = ExtResource("1_8l7eb")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+position = Vector2(-450, -5)
+motion_mirroring = Vector2(894, 0)
+
+[node name="Back" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(643.969, 151)
+scale = Vector2(3.66683, 1.88333)
+texture = ExtResource("1_b1xgr")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+position = Vector2(-450, -2)
+motion_scale = Vector2(0.7, 0.7)
+motion_mirroring = Vector2(900, 0)
+
+[node name="Middle2" type="Sprite2D" parent="ParallaxLayer2"]
+position = Vector2(28, 190)
+texture = ExtResource("2_pv1wt")
+
+[node name="Middle" type="Sprite2D" parent="ParallaxLayer2/Middle2"]
+position = Vector2(175, 0)
+texture = ExtResource("2_pv1wt")
+
+[node name="Middle2" type="Sprite2D" parent="ParallaxLayer2/Middle2"]
+position = Vector2(351, 0)
+texture = ExtResource("2_pv1wt")
+
+[node name="Middle" type="Sprite2D" parent="ParallaxLayer2/Middle2/Middle2"]
+position = Vector2(175, 0)
+texture = ExtResource("2_pv1wt")
+
+[node name="Middle2" type="Sprite2D" parent="ParallaxLayer2/Middle2/Middle2"]
+position = Vector2(351, 0)
+texture = ExtResource("2_pv1wt")
+
+[node name="Middle" type="Sprite2D" parent="ParallaxLayer2/Middle2/Middle2/Middle2"]
+position = Vector2(175, 0)
+texture = ExtResource("2_pv1wt")
+
+[node name="Middle2" type="Sprite2D" parent="ParallaxLayer2/Middle2/Middle2/Middle2"]
+position = Vector2(349, 0)
+texture = ExtResource("2_pv1wt")
+
+[node name="Middle" type="Sprite2D" parent="ParallaxLayer2/Middle2/Middle2/Middle2/Middle2"]
+position = Vector2(175, 0)
+texture = ExtResource("2_pv1wt")

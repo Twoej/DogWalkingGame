@@ -1,0 +1,97 @@
+[gd_scene load_steps=14 format=3 uid="uid://bhe8h4dtftvqu"]
+
+[ext_resource type="Texture2D" uid="uid://c0wu2b1t5fikk" path="res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-1.png" id="2_khj4p"]
+[ext_resource type="Texture2D" uid="uid://cb8s061i4301a" path="res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-2.png" id="3_7p22j"]
+[ext_resource type="Texture2D" uid="uid://btxrrxk41j0c" path="res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-3.png" id="4_l3p1h"]
+[ext_resource type="Texture2D" uid="uid://b7le3sv03d2cd" path="res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-4.png" id="5_lrm18"]
+[ext_resource type="Texture2D" uid="uid://dg2w15r8heiyy" path="res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-5.png" id="6_hlhx2"]
+[ext_resource type="Texture2D" uid="uid://bnu077k66326o" path="res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-6.png" id="7_y8ltc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qb8e0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_khj4p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_khj4p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7p22j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_l3p1h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_lrm18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hlhx2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_y8ltc")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fjh33"]
+radius = 14.0
+
+[sub_resource type="Animation" id="Animation_58hr4"]
+resource_name = "Run"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [1, 0, 1, 2, 3, 4, 5]
+}
+
+[sub_resource type="Animation" id="Animation_qhjsv"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_rkm8v"]
+resource_name = "GPRun"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bixwr"]
+_data = {
+"GPRun": SubResource("Animation_rkm8v"),
+"RESET": SubResource("Animation_qhjsv"),
+"Run": SubResource("Animation_58hr4")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6j7u1"]
+radius = 82.0549
+
+[node name="GP" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_qb8e0")
+animation = &"Run"
+frame = 1
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 3)
+shape = SubResource("CircleShape2D_fjh33")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_bixwr")
+}
+
+[node name="PlayerDetection" type="Area2D" parent="."]
+position = Vector2(1, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetection"]
+position = Vector2(1, 2)
+shape = SubResource("CircleShape2D_6j7u1")
+
+[connection signal="body_entered" from="PlayerDetection" to="CollisionShape2D" method="_on_player_detection_body_entered"]
