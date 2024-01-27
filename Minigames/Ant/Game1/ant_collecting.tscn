@@ -5,7 +5,6 @@
 [ext_resource type="Script" path="res://Minigames/Ant/Game1/AntCounter.gd" id="3_vtlxo"]
 [ext_resource type="Script" path="res://Minigames/Ant/Game1/LoseTimerLabel.gd" id="4_u8ykp"]
 
-
 [sub_resource type="GDScript" id="GDScript_c4slc"]
 script/source = "extends Node2D
 

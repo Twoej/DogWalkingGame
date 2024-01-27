@@ -13,7 +13,6 @@
 [ext_resource type="Texture2D" uid="uid://cgnwkbn7lkr3a" path="res://Artwork/Misc/fish.png" id="8_8soon"]
 [ext_resource type="Script" path="res://Minigames/Fish/Game1/TimeLeft.gd" id="12_b76f7"]
 
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g8dyw"]
 size = Vector2(183.333, 651.667)
 
