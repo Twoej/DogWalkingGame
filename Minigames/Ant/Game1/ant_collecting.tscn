@@ -1,9 +1,9 @@
 [gd_scene load_steps=13 format=3 uid="uid://c6yfkkpditq3y"]
 
-[ext_resource type="Script" path="res://Minigames/AntSpawner.gd" id="1_tda4l"]
-[ext_resource type="PackedScene" uid="uid://sj53c0kb48lu" path="res://Animals/ecaped_ant.tscn" id="2_knyrp"]
-[ext_resource type="Script" path="res://Minigames/AntCounter.gd" id="3_vtlxo"]
-[ext_resource type="Script" path="res://Minigames/LoseTimerLabel.gd" id="4_u8ykp"]
+[ext_resource type="Script" path="res://Minigames/Ant/Game1/AntSpawner.gd" id="1_tda4l"]
+[ext_resource type="PackedScene" uid="uid://sj53c0kb48lu" path="res://Minigames/Ant/ecaped_ant.tscn" id="2_knyrp"]
+[ext_resource type="Script" path="res://Minigames/Ant/Game1/AntCounter.gd" id="3_vtlxo"]
+[ext_resource type="Script" path="res://Minigames/Ant/Game1/LoseTimerLabel.gd" id="4_u8ykp"]
 
 [sub_resource type="GDScript" id="GDScript_c4slc"]
 script/source = "extends Node2D

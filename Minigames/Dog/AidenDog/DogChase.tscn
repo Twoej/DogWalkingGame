@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=3 uid="uid://dmneid2hxgmft"]
 
 [ext_resource type="Script" path="res://Animals/GP/DogChase.gd" id="1_v88ws"]
-[ext_resource type="Script" path="res://Minigames/ChasedPosition.gd" id="8_2dufi"]
+[ext_resource type="Script" path="res://Minigames/Dog/AidenDog/ChasedPosition.gd" id="8_2dufi"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4uf1u"]
 load_path = "res://.godot/imported/opossum-1.png-27609fbd82fa74fd7acf2f5e1c10ce69.ctex"

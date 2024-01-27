@@ -1,5 +1,4 @@
 extends CharacterBody2D
-@export var test: PackedScene
 @onready var anim = get_node("PlayerSprite");
 
 func _process(delta):
@@ -16,3 +15,7 @@ func _process(delta):
 		anim.play("Run")
 		
 	move_and_slide()
+
+
+func _on_timer_timeout():
+	
