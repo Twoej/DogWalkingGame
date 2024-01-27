@@ -1,9 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://c6yfkkpditq3y"]
+[gd_scene load_steps=11 format=3 uid="uid://c6yfkkpditq3y"]
 
 [ext_resource type="Script" path="res://Minigames/AntSpawner.gd" id="1_tda4l"]
 [ext_resource type="PackedScene" uid="uid://sj53c0kb48lu" path="res://Animals/ecaped_ant.tscn" id="2_knyrp"]
 [ext_resource type="Script" path="res://Minigames/AntCounter.gd" id="3_vtlxo"]
-[ext_resource type="Script" path="res://Minigames/LoseTimerLabel.gd" id="4_u8ykp"]
 
 [sub_resource type="GDScript" id="GDScript_c4slc"]
 script/source = "extends Node2D
@@ -23,19 +22,12 @@ func _process(delta):
 	$Mouse.position = Vector2(-1435, 221)
 	if (Input.is_action_just_pressed(\"collect_ant\")):
 		$Mouse.position = get_global_mouse_position()
-	
-	if (ant_count == 0):
-		pass #Win
-	
+
 
 func _on_mouse_area_entered(ant):
 	if (ant.is_in_group(\"ant\")):
 		ant.queue_free()
 		ant_count -= 1
-
-
-func _on_lose_timer_timeout():
-	pass #Loss
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_250j1"]
@@ -55,9 +47,6 @@ radius = 27.0185
 
 [sub_resource type="LabelSettings" id="LabelSettings_tiawh"]
 font_size = 24
-
-[sub_resource type="LabelSettings" id="LabelSettings_7qv11"]
-font_size = 30
 
 [node name="AntCollecting" type="Node2D"]
 script = SubResource("GDScript_c4slc")
@@ -92,25 +81,12 @@ metadata/_edit_group_ = true
 shape = SubResource("CircleShape2D_i0g7l")
 
 [node name="AntCounter" type="Label" parent="."]
-offset_left = 507.0
+offset_left = 486.0
 offset_top = 126.0
-offset_right = 734.0
+offset_right = 713.0
 offset_bottom = 204.0
 label_settings = SubResource("LabelSettings_tiawh")
 script = ExtResource("3_vtlxo")
 
-[node name="LoseTimer" type="Timer" parent="."]
-wait_time = 7.0
-autostart = true
-
-[node name="LoseTimerLabel" type="Label" parent="LoseTimer"]
-offset_left = 561.0
-offset_top = 21.0
-offset_right = 639.0
-offset_bottom = 128.0
-label_settings = SubResource("LabelSettings_7qv11")
-script = ExtResource("4_u8ykp")
-
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="Mouse" to="." method="_on_mouse_area_entered"]
-[connection signal="timeout" from="LoseTimer" to="." method="_on_lose_timer_timeout"]
