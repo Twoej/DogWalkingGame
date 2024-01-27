@@ -1,11 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://sj53c0kb48lu"]
 
 [ext_resource type="Script" path="res://Animals/ecaped_ant.gd" id="1_06yst"]
-[ext_resource type="Texture2D" uid="uid://reffyy2nm4js" path="res://Temp art/Meowing Cat/MeowingCatIdleSide.png" id="1_n2ak8"]
+[ext_resource type="Texture2D" uid="uid://dl8jdjtupw6hn" path="res://Artwork/AntSprites/Untitled_Artwork-1 (9).png" id="2_rfg30"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sl3ir"]
-radius = 7.0
-height = 22.0
+radius = 12.0
+height = 36.0
 
 [node name="EscapedAnt" type="Area2D"]
 script = ExtResource("1_06yst")
@@ -16,6 +16,5 @@ rotation = 1.5708
 shape = SubResource("CapsuleShape2D_sl3ir")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -2)
-texture = ExtResource("1_n2ak8")
-hframes = 4
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_rfg30")
