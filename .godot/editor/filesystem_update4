@@ -1,11 +1,5 @@
-res://Animals/ecaped_ant.tscn
-res://Minigames/ant_collecting.tscn
-res://Minigames/ant_collecting.gd
-res://Animals/AntSpawner.gd
-res://Minigames/AntSpawner.gd
-res://Animals/ecaped_ant.gd
-res://Minigames/fish_balance.tscn
-res://Minigames/AntCounter.gd
-res://Minigames/LoseTimerLabel.gd
 res://Minigames/martian_falling.tscn
 res://Animals/martian_falling.tscn
+res://Minigames/fish_balance.tscn
+res://Minigames/ant_collecting.tscn
+res://Animals/martian_falling.gd

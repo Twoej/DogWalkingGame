@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://i16stfecnkg"]
+[gd_scene load_steps=3 format=3 uid="uid://i16stfecnkg"]
+
+[ext_resource type="Script" path="res://Animals/martian_falling.gd" id="1_3nbxc"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nvspm"]
 
 [node name="Martian" type="Area2D"]
+script = ExtResource("1_3nbxc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_nvspm")
