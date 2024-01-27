@@ -1,37 +1,49 @@
 [gd_scene load_steps=16 format=3 uid="uid://dmneid2hxgmft"]
 
 [ext_resource type="Script" path="res://Animals/GP/DogChase.gd" id="1_v88ws"]
-[ext_resource type="Texture2D" uid="uid://c0wu2b1t5fikk" path="res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-1.png" id="2_xpiik"]
-[ext_resource type="Texture2D" uid="uid://cb8s061i4301a" path="res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-2.png" id="3_whcj1"]
-[ext_resource type="Texture2D" uid="uid://btxrrxk41j0c" path="res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-3.png" id="4_66ked"]
-[ext_resource type="Texture2D" uid="uid://b7le3sv03d2cd" path="res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-4.png" id="5_n2574"]
-[ext_resource type="Texture2D" uid="uid://dg2w15r8heiyy" path="res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-5.png" id="6_o4a2w"]
-[ext_resource type="Texture2D" uid="uid://bnu077k66326o" path="res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-6.png" id="7_ohxdc"]
 [ext_resource type="Script" path="res://Minigames/ChasedPosition.gd" id="8_2dufi"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4uf1u"]
+load_path = "res://.godot/imported/opossum-1.png-27609fbd82fa74fd7acf2f5e1c10ce69.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_s24qs"]
+load_path = "res://.godot/imported/opossum-2.png-8a042589bb444a8b641dc2af13d69011.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ujklf"]
+load_path = "res://.godot/imported/opossum-3.png-5d8113335213f7d2a3acb31c558baad1.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mp5de"]
+load_path = "res://.godot/imported/opossum-4.png-e887b8827813ed230a69d139c17938cd.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rxlre"]
+load_path = "res://.godot/imported/opossum-5.png-915e9230f84aa9a07989dffbe6f981cd.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v5u1w"]
+load_path = "res://.godot/imported/opossum-6.png-61871f2c3dee47d7572e14c7987e6713.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qb8e0"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_xpiik")
+"texture": SubResource("CompressedTexture2D_4uf1u")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_xpiik")
+"texture": SubResource("CompressedTexture2D_4uf1u")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_whcj1")
+"texture": SubResource("CompressedTexture2D_s24qs")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_66ked")
+"texture": SubResource("CompressedTexture2D_ujklf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_n2574")
+"texture": SubResource("CompressedTexture2D_mp5de")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_o4a2w")
+"texture": SubResource("CompressedTexture2D_rxlre")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_ohxdc")
+"texture": SubResource("CompressedTexture2D_v5u1w")
 }],
 "loop": true,
 "name": &"Run",

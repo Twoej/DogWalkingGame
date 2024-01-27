@@ -6,13 +6,13 @@
 [ext_resource type="PackedScene" uid="uid://bhe8h4dtftvqu" path="res://Animals/GP/GP.tscn" id="3_f4kfq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0f6a2"]
-size = Vector2(2797.06, 64)
+size = Vector2(2291.06, 254.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xofj1"]
-size = Vector2(9.78125, 402.25)
+size = Vector2(39.5625, 402.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_binjv"]
-size = Vector2(2794, 193.5)
+size = Vector2(2266, 193.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ibfbj"]
 size = Vector2(26.5, 423)
@@ -22,41 +22,42 @@ size = Vector2(26.5, 423)
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(-118, 82)
 script = ExtResource("1_7j11v")
+playerPosition = ExtResource("1_bq0mn")
 
-[node name="BotBorder" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1018.47, 123)
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(765.468, 218.125)
 shape = SubResource("RectangleShape2D_0f6a2")
 
-[node name="LeftBorder" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-384.891, 40)
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-370, 40)
 shape = SubResource("RectangleShape2D_xofj1")
 
-[node name="TopBorder" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1017, -64.75)
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(775, -64.75)
 shape = SubResource("RectangleShape2D_binjv")
 
-[node name="Road" type="Panel" parent="StaticBody2D"]
+[node name="Panel" type="Panel" parent="StaticBody2D"]
 offset_left = -384.0
 offset_top = 51.0
-offset_right = 2416.0
+offset_right = 1914.0
 offset_bottom = 91.0
-
-[node name="RightBorder" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(2403, 63)
-shape = SubResource("RectangleShape2D_ibfbj")
 
 [node name="End" type="Area2D" parent="StaticBody2D"]
 
-[node name="EndDetector" type="CollisionShape2D" parent="StaticBody2D/End"]
-position = Vector2(2383, 64)
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D/End"]
+position = Vector2(1891, 43)
 shape = SubResource("RectangleShape2D_xofj1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1896.25, 52)
+shape = SubResource("RectangleShape2D_ibfbj")
+
+[node name="BG" parent="." instance=ExtResource("2_7w2qg")]
 
 [node name="GP" parent="." instance=ExtResource("3_f4kfq")]
 position = Vector2(-130, 26)
 
 [node name="Player" parent="." instance=ExtResource("1_bq0mn")]
 position = Vector2(-49, 147)
-
-[node name="BG" parent="." instance=ExtResource("2_7w2qg")]
 
 [connection signal="body_entered" from="StaticBody2D/End" to="StaticBody2D" method="_on_end_body_entered"]

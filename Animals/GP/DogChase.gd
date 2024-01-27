@@ -34,7 +34,6 @@ func _physics_process(delta):
 		if direction.x > 0:
 			velocity.x += 1 * SPEED
 			direction = Vector2(1, 0)
-			get_node("PlayerSprite").flip_h = false
 			dogAnim.flip_h = false
 			dogAnim.play("Run")
 				
