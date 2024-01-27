@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://c6yfkkpditq3y"]
+
+[ext_resource type="Script" path="res://Minigames/AntSpawner.gd" id="1_tda4l"]
+[ext_resource type="PackedScene" uid="uid://sj53c0kb48lu" path="res://Animals/ecaped_ant.tscn" id="2_knyrp"]
+
+[sub_resource type="GDScript" id="GDScript_c4slc"]
+script/source = "extends Node2D
+
+func _ready():
+	for i in 8:
+		$AntSpawner._spawn_ant()
+
+
+func _on_area_2d_area_entered(ant):
+	ant._screen_edge()
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_250j1"]
+size = Vector2(78.5, 819)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mnfcm"]
+size = Vector2(1268, 78.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1rp5q"]
+size = Vector2(81.5, 819)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o8t5c"]
+size = Vector2(1314, 81)
+
+[node name="AntCollecting" type="Node2D"]
+script = SubResource("GDScript_c4slc")
+
+[node name="AntSpawner" type="Node2D" parent="."]
+script = ExtResource("1_tda4l")
+escaped_ant_tscn = ExtResource("2_knyrp")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="Boundary1" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-47.25, 323)
+shape = SubResource("RectangleShape2D_250j1")
+
+[node name="Boundary2" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(605, 694.25)
+shape = SubResource("RectangleShape2D_mnfcm")
+
+[node name="Boundary3" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(1198.75, 322.5)
+shape = SubResource("RectangleShape2D_1rp5q")
+
+[node name="Boundary4" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(583, -47.5)
+shape = SubResource("RectangleShape2D_o8t5c")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

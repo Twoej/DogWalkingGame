@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://e7xypn03j56i"]
+[gd_scene load_steps=4 format=3 uid="uid://dlqlykn1b1tiw"]
 
 [ext_resource type="Script" path="res://Animals/fishbowl_dog.gd" id="1_2cna1"]
 [ext_resource type="Texture2D" uid="uid://dyd5mvgx82qq8" path="res://Temp art/Faithful Dog/FaithfulDogIdleSide.png" id="2_18fll"]
