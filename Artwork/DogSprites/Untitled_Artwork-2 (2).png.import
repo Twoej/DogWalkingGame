@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6bloocqdmbtb"
-path="res://.godot/imported/Untitled_Artwork-2 (7).png-3ab5474142d2fc9cedeea24f5e5607e9.ctex"
+uid="uid://dbq853c1sjg0r"
+path="res://.godot/imported/Untitled_Artwork-2 (2).png-7910acea85d63e53ab5518850ad7262a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Artwork/PlayerSprites/Untitled_Artwork-2 (7).png"
-dest_files=["res://.godot/imported/Untitled_Artwork-2 (7).png-3ab5474142d2fc9cedeea24f5e5607e9.ctex"]
+source_file="res://Artwork/DogSprites/Untitled_Artwork-2 (2).png"
+dest_files=["res://.godot/imported/Untitled_Artwork-2 (2).png-7910acea85d63e53ab5518850ad7262a.ctex"]
 
 [params]
 
