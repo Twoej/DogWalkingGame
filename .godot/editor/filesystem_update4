@@ -1,8 +1,7 @@
+res://Animals/ecaped_ant.tscn
+res://Minigames/ant_collecting.tscn
+res://Minigames/ant_collecting.gd
+res://Animals/AntSpawner.gd
+res://Minigames/AntSpawner.gd
+res://Animals/ecaped_ant.gd
 res://Minigames/fish_balance.tscn
-res://Animals/fishbowl_dog.tscn
-res://Minigames/Fishbowl.gd
-res://Animals/fishbowl_dog.gd
-res://Minigames/fish_balance.gd
-res://Minigames/DogSpawnerTimer.gd
-res://Minigames/FishbowlSprite.gd
-res://Minigames/TimeLeft.gd
