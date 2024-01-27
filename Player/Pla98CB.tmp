@@ -1,21 +1,83 @@
-[gd_scene load_steps=11 format=3 uid="uid://chqlkjcjvnsrk"]
+[gd_scene load_steps=20 format=3 uid="uid://chqlkjcjvnsrk"]
 
 [ext_resource type="Script" path="res://Player/Player.gd" id="1_dkdqb"]
-[ext_resource type="Texture2D" uid="uid://c6bloocqdmbtb" path="res://Artwork/PlayerSprites/Untitled_Artwork-2 (7).png" id="2_6p1ru"]
-[ext_resource type="Texture2D" uid="uid://b5m8rfik55di3" path="res://Artwork/PlayerSprites/Untitled_Artwork-2 (8).png" id="3_l2imw"]
+[ext_resource type="Texture2D" uid="uid://b7puev7jt4g27" path="res://Temp art/Curious Monkey/CuriousMonkeyIdleSide.png" id="2_mnt85"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ufbje"]
-radius = 4.0
+radius = 8.0
 height = 24.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nu04h"]
+atlas = ExtResource("2_mnt85")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ud7tp"]
+atlas = ExtResource("2_mnt85")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cyaid"]
+atlas = ExtResource("2_mnt85")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2pc50"]
+atlas = ExtResource("2_mnt85")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_krf46"]
+load_path = "res://.godot/imported/player-run-1.png-0e9a87d89ed5adc54c33b20ea6f60a43.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vnc8r"]
+load_path = "res://.godot/imported/player-run-2.png-284ddce843a44a2cff554bbdd5ea2ad0.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sqten"]
+load_path = "res://.godot/imported/player-run-3.png-f9084fc84072251aabe56b0390c96cb4.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_n3x48"]
+load_path = "res://.godot/imported/player-run-4.png-2455511614e7ce585815e965226da888.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fji7o"]
+load_path = "res://.godot/imported/player-run-5.png-e20ab5c39a81994fce06321a3ab1fa99.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0oaxs"]
+load_path = "res://.godot/imported/player-run-6.png-eb56618c009cad0bdf123df0739592a2.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8qd8n"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_6p1ru")
+"texture": SubResource("AtlasTexture_nu04h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_l2imw")
+"texture": SubResource("AtlasTexture_ud7tp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cyaid")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2pc50")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_krf46")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_vnc8r")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_sqten")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_n3x48")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_fji7o")
+}, {
+"duration": 1.0,
+"texture": SubResource("CompressedTexture2D_0oaxs")
 }],
 "loop": true,
 "name": &"Run",
@@ -71,7 +133,6 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_ttx8h"]
 resource_name = "Run"
-length = 0.2
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -100,10 +161,10 @@ script = ExtResource("1_dkdqb")
 shape = SubResource("CapsuleShape2D_ufbje")
 
 [node name="PlayerSprite" type="AnimatedSprite2D" parent="."]
-position = Vector2(1, 3)
-scale = Vector2(0.047, 0.042)
+position = Vector2(3.72529e-09, -4)
+scale = Vector2(1.03409, 0.960938)
 sprite_frames = SubResource("SpriteFrames_8qd8n")
-animation = &"Run"
+animation = &"Idle"
 frame = 1
 
 [node name="Camera2D" type="Camera2D" parent="."]

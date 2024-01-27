@@ -60,7 +60,7 @@ shape = SubResource("RectangleShape2D_xofj1")
 position = Vector2(-380.5, -15)
 shape = SubResource("RectangleShape2D_wexfm")
 
-[node name="Player" parent="." groups=["Animals"] instance=ExtResource("1_bq0mn")]
+[node name="Player" parent="." instance=ExtResource("1_bq0mn")]
 position = Vector2(-49, 147)
 
 [node name="Beacon" type="Node2D" parent="Player"]
@@ -69,8 +69,8 @@ position = Vector2(-49, 147)
 
 [node name="BG" parent="." instance=ExtResource("2_7w2qg")]
 
-[node name="DogChase" parent="." groups=["Mobs"] instance=ExtResource("4_wpd6t")]
-position = Vector2(346, 130)
+[node name="DogChase" parent="." instance=ExtResource("4_wpd6t")]
+position = Vector2(-132, 147)
 
 [connection signal="body_entered" from="StaticBody2D/TPEnd" to="StaticBody2D" method="_on_tp_end_body_entered"]
 [connection signal="body_entered" from="StaticBody2D/TPBegin" to="StaticBody2D" method="_on_tp_begin_body_entered"]
