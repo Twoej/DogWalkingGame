@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://sj53c0kb48lu"]
 
-[ext_resource type="Script" path="res://Animals/ecaped_ant.gd" id="1_06yst"]
-[ext_resource type="Texture2D" uid="uid://dl8jdjtupw6hn" path="res://Artwork/AntSprites/Untitled_Artwork-1 (9).png" id="2_rfg30"]
+[ext_resource type="Script" path="res://Minigames/Ant/ecaped_ant.gd" id="1_06yst"]
+[ext_resource type="Texture2D" uid="uid://bj0dh70fdfdvf" path="res://Artwork/AntSprites/Untitled_Artwork-1 (9).png" id="2_rfg30"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sl3ir"]
 radius = 12.0

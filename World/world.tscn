@@ -1,9 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://rwtfd0mw4b0r"]
+[gd_scene load_steps=8 format=3 uid="uid://rwtfd0mw4b0r"]
 
 [ext_resource type="Script" path="res://World/StaticBody2D.gd" id="1_7j11v"]
 [ext_resource type="PackedScene" uid="uid://chqlkjcjvnsrk" path="res://Player/Player.tscn" id="1_bq0mn"]
 [ext_resource type="PackedScene" uid="uid://fx17s7mjud88" path="res://BG/BG.tscn" id="2_7w2qg"]
-[ext_resource type="PackedScene" uid="uid://bhe8h4dtftvqu" path="res://Animals/GP/GP.tscn" id="3_f4kfq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0f6a2"]
 size = Vector2(2797.06, 64)
@@ -50,9 +49,6 @@ shape = SubResource("RectangleShape2D_ibfbj")
 [node name="EndDetector" type="CollisionShape2D" parent="StaticBody2D/End"]
 position = Vector2(2383, 64)
 shape = SubResource("RectangleShape2D_xofj1")
-
-[node name="GP" parent="." instance=ExtResource("3_f4kfq")]
-position = Vector2(-130, 26)
 
 [node name="Player" parent="." instance=ExtResource("1_bq0mn")]
 position = Vector2(-49, 147)

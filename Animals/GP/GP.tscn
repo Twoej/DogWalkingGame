@@ -1,47 +1,12 @@
-[gd_scene load_steps=15 format=3 uid="uid://bhe8h4dtftvqu"]
+[gd_scene load_steps=8 format=3 uid="uid://bhe8h4dtftvqu"]
 
-[ext_resource type="Texture2D" uid="uid://c0wu2b1t5fikk" path="res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-1.png" id="2_khj4p"]
-[ext_resource type="Texture2D" uid="uid://cb8s061i4301a" path="res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-2.png" id="3_7p22j"]
-[ext_resource type="Texture2D" uid="uid://btxrrxk41j0c" path="res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-3.png" id="4_l3p1h"]
-[ext_resource type="Texture2D" uid="uid://b7le3sv03d2cd" path="res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-4.png" id="5_lrm18"]
-[ext_resource type="Texture2D" uid="uid://dg2w15r8heiyy" path="res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-5.png" id="6_hlhx2"]
-[ext_resource type="Script" path="res://Animals/GP/GP.gd" id="7_vgnvr"]
-[ext_resource type="Texture2D" uid="uid://bnu077k66326o" path="res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-6.png" id="7_y8ltc"]
+[ext_resource type="Script" path="res://Animals/GP/PlayerDetection.gd" id="7_vgnvr"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qb8e0"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_khj4p")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_khj4p")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_7p22j")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_l3p1h")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_lrm18")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_hlhx2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_y8ltc")
-}],
-"loop": true,
-"name": &"Run",
-"speed": 5.0
-}]
+animations = []
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fjh33"]
 radius = 14.0
-
-[sub_resource type="Animation" id="Animation_rkm8v"]
-resource_name = "GPRun"
 
 [sub_resource type="Animation" id="Animation_qhjsv"]
 length = 0.001
@@ -63,7 +28,6 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bixwr"]
 _data = {
-"GPRun": SubResource("Animation_rkm8v"),
 "RESET": SubResource("Animation_qhjsv"),
 "Run": SubResource("Animation_58hr4")
 }
@@ -76,8 +40,7 @@ script = ExtResource("7_vgnvr")
 
 [node name="DogChaseSprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_qb8e0")
-animation = &"Run"
-frame = 1
+animation = &""
 flip_h = true
 
 [node name="Hitbox" type="CollisionShape2D" parent="."]
