@@ -10,9 +10,9 @@ func _on_tree_entered():
 func _ready():
 	var speed = 0
 	if ($DogSprite.is_flipped_h()):
-		speed = randf_range(-450, -550)
+		speed = randf_range(-650, -750)
 	else:
-		speed = randf_range(450, 550)
+		speed = randf_range(650, 750)
 	var angle = randf_range(-0.1, 0.1)
 	var direction_vector = Vector2.ZERO
 	direction_vector.x = cos(angle)
