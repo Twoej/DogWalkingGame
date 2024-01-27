@@ -9,3 +9,4 @@ res://Minigames/AntCounter.gd
 res://Minigames/LoseTimerLabel.gd
 res://Minigames/martian_falling.tscn
 res://Animals/martian_falling.tscn
+res://Animals/martian_falling.gd
