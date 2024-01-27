@@ -1,8 +1,17 @@
+<<<<<<< Updated upstream
 Timer
 Sprite2D
 CollisionShape2D
 Area2D
 Label
 Node2D
+=======
+Node2D
+Timer
+CollisionShape2D
+Area2D
+Sprite2D
+Label
+>>>>>>> Stashed changes
 AnimationPlayer
 AnimatedSprite2D

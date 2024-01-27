@@ -12,9 +12,12 @@ res://Animals/GP/DogChase.gd
 res://World/StaticBody2D.gd
 res://World/Beacon.gd
 res://World/Timer.gd
+<<<<<<< Updated upstream
 res://Minigames/Dog/DogChase.tscn
 res://Minigames/Fish/Game1/fishbowl_dog.tscn
 res://Minigames/Ant/ecaped_ant.tscn
 res://Minigames/Dog/AidenDog/DogChase.tscn
 res://Minigames/Fish/Game1/fish_balance.tscn
 res://Minigames/Ant/Game1/ant_collecting.tscn
+=======
+>>>>>>> Stashed changes
