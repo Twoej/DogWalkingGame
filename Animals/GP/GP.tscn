@@ -40,12 +40,18 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_fjh33"]
 radius = 14.0
 
+[sub_resource type="Animation" id="Animation_rkm8v"]
+resource_name = "GPRun"
+
+[sub_resource type="Animation" id="Animation_qhjsv"]
+length = 0.001
+
 [sub_resource type="Animation" id="Animation_58hr4"]
 resource_name = "Run"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:frame")
+tracks/0/path = NodePath("DogChaseSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -54,12 +60,6 @@ tracks/0/keys = {
 "update": 1,
 "values": [1, 0, 1, 2, 3, 4, 5]
 }
-
-[sub_resource type="Animation" id="Animation_qhjsv"]
-length = 0.001
-
-[sub_resource type="Animation" id="Animation_rkm8v"]
-resource_name = "GPRun"
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bixwr"]
 _data = {
@@ -74,7 +74,7 @@ radius = 175.183
 [node name="GP" type="CharacterBody2D"]
 script = ExtResource("7_vgnvr")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="DogChaseSprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_qb8e0")
 animation = &"Run"
 frame = 1

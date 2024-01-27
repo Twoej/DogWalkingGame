@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://rwtfd0mw4b0r"]
+[gd_scene load_steps=8 format=3 uid="uid://rwtfd0mw4b0r"]
 
 [ext_resource type="PackedScene" uid="uid://chqlkjcjvnsrk" path="res://Player/Player.tscn" id="1_bq0mn"]
 [ext_resource type="PackedScene" uid="uid://fx17s7mjud88" path="res://BG/BG.tscn" id="2_7w2qg"]
 [ext_resource type="PackedScene" uid="uid://bhe8h4dtftvqu" path="res://Animals/GP/GP.tscn" id="3_f4kfq"]
+[ext_resource type="PackedScene" uid="uid://dnlxjul83opo1" path="res://Minigames/fish_balance.tscn" id="4_155jp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0f6a2"]
 size = Vector2(1344.13, 238.5)
@@ -10,17 +11,16 @@ size = Vector2(1344.13, 238.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xofj1"]
 size = Vector2(39.5625, 402.25)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_binjv"]
+size = Vector2(1276, 95.5)
+
 [node name="World" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(-118, 82)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(371, 340)
-shape = SubResource("RectangleShape2D_0f6a2")
-
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(280, 345)
+position = Vector2(292, 226)
 shape = SubResource("RectangleShape2D_0f6a2")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
@@ -32,14 +32,22 @@ position = Vector2(936, 38)
 shape = SubResource("RectangleShape2D_xofj1")
 
 [node name="Panel" type="Panel" parent="StaticBody2D"]
-offset_left = -388.0
-offset_top = 223.0
-offset_right = 958.0
-offset_bottom = 263.0
+offset_left = -384.0
+offset_top = 51.0
+offset_right = 962.0
+offset_bottom = 91.0
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(280, -113.75)
+shape = SubResource("RectangleShape2D_binjv")
 
 [node name="BG" parent="." instance=ExtResource("2_7w2qg")]
 
 [node name="GP" parent="." instance=ExtResource("3_f4kfq")]
-position = Vector2(197, 217)
+position = Vector2(186, 62)
 
 [node name="Player" parent="." instance=ExtResource("1_bq0mn")]
+position = Vector2(-56, 81)
+
+[node name="FishBalance" parent="." instance=ExtResource("4_155jp")]
+position = Vector2(2, -12)

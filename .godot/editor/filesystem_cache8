@@ -1,18 +1,32 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706331453
-icon.svg::CompressedTexture2D::7827958211160183153::1706312878::1706312970::1::::<><>::
+::res://::1706377609
 GP.gd::GDScript::-1::1706331453::0::1::::<>Node2D<>::
-::res://Animals/::1706324826
-::res://Animals/GP/::1706370557
-GP.tscn::PackedScene::2888017790176488208::1706370557::0::1::::<><>::uid://c0wu2b1t5fikk::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-1.png<>uid://cb8s061i4301a::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-2.png<>uid://btxrrxk41j0c::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-3.png<>uid://b7le3sv03d2cd::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-4.png<>uid://dg2w15r8heiyy::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-5.png<>res://Animals/GP/GP.gd<>uid://bnu077k66326o::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-6.png
-GP.gd::GDScript::-1::1706370555::0::1::::<>CharacterBody2D<>::
+icon.svg::CompressedTexture2D::7827958211160183153::1706312878::1706312970::1::::<><>::
+::res://Animals/::1706380452
+fishbowl_dog.gd::GDScript::-1::1706371092::0::1::::<>Area2D<>::
+fishbowl_dog.tscn::PackedScene::348255621675790598::1706380452::0::1::::<><>::res://Animals/fishbowl_dog.gd<>uid://dyd5mvgx82qq8::::res://Temp art/Faithful Dog/FaithfulDogIdleSide.png
+::res://Animals/GP/::1706380651
+GP.tscn::PackedScene::2888017790176488208::1706379564::0::1::::<><>::uid://c0wu2b1t5fikk::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-1.png<>uid://cb8s061i4301a::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-2.png<>uid://btxrrxk41j0c::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-3.png<>uid://b7le3sv03d2cd::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-4.png<>uid://dg2w15r8heiyy::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-5.png<>res://Animals/GP/GP.gd<>uid://bnu077k66326o::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-6.png
 PlayerDetection.gd::GDScript::-1::1706368286::0::1::::<>Area2D<>::
-::res://BG/::1706370557
-BG.tscn::PackedScene::400061689162508223::1706370557::0::1::::<><>::res://BG/BG.gd<>uid://s54lvw23mkya::::res://Player/sunny-land-phaser-project/sunny-land/assets/environment/back.png<>uid://rgcnkd6q8s5u::::res://Player/sunny-land-phaser-project/sunny-land/assets/environment/middle.png
+DogChase.gd::GDScript::-1::1706380634::0::1::::<>CharacterBody2D<>::
+::res://Artwork/::1706371092
+::res://Artwork/Misc/::1706371092
+fishbowl.png::CompressedTexture2D::3420702811886624971::1706371092::1706371092::1::::<><>::
+::res://BG/::1706380452
 BG.gd::GDScript::-1::1706325987::0::1::::<>ParallaxBackground<>::
-::res://Player/::1706370557
-Player.gd::GDScript::-1::1706367483::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::5297879538014139628::1706370557::0::1::::<><>::res://Player/Player.gd<>uid://budgvjrei56ko::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/player/run/player-run-1.png<>uid://blnyyojtpg3hi::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/player/run/player-run-2.png<>uid://di6aes6n4ff7p::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/player/run/player-run-3.png<>uid://d3xoavdl7wj07::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/player/run/player-run-4.png<>uid://bu5awtv4sk8a7::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/player/run/player-run-5.png<>uid://2xxot6df4rtb::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/player/run/player-run-6.png
+BG.tscn::PackedScene::400061689162508223::1706380452::0::1::::<><>::res://BG/BG.gd<>uid://s54lvw23mkya::::res://Player/sunny-land-phaser-project/sunny-land/assets/environment/back.png<>uid://rgcnkd6q8s5u::::res://Player/sunny-land-phaser-project/sunny-land/assets/environment/middle.png
+::res://Minigames/::1706380583
+DogChase.gd::GDScript::-1::1706379086::0::1::::<>Area2D<>::
+DogSpawner.gd::GDScript::-1::1706371092::0::1::::<>Node2D<>::
+DogSpawnerTimer.gd::GDScript::-1::1706371092::0::1::::<>Timer<>::
+Fishbowl.gd::GDScript::-1::1706371092::0::1::::<>Node2D<>::
+fish_balance.gd::GDScript::-1::1706371092::0::1::::<>Node2D<>::
+fish_balance.tscn::PackedScene::8095838805644360386::1706371092::0::1::::<><>::uid://dlqlykn1b1tiw::::res://Animals/fishbowl_dog.tscn<>uid://djr6lfia1xuf6::::res://icon.svg<>res://Minigames/fish_balance.gd<>res://Minigames/DogSpawner.gd<>res://Minigames/DogSpawnerTimer.gd<>res://Minigames/Fishbowl.gd<>uid://bo0aqfywltnh8::::res://Artwork/Misc/fishbowl.png
+DogChase.tscn::PackedScene::8028622439489577133::1706380583::0::1::::<><>::res://Animals/GP/GP.gd<>uid://c0wu2b1t5fikk::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-1.png<>uid://cb8s061i4301a::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-2.png<>uid://btxrrxk41j0c::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-3.png<>uid://b7le3sv03d2cd::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-4.png<>uid://dg2w15r8heiyy::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-5.png<>uid://bnu077k66326o::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-6.png<>res://Minigames/ChasedPosition.gd
+ChasedPosition.gd::GDScript::-1::1706380583::0::1::::<>Node2D<>::
+::res://Player/::1706380452
+Player.gd::GDScript::-1::1706380327::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::5297879538014139628::1706380452::0::1::::<><>::res://Player/Player.gd<>uid://budgvjrei56ko::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/player/run/player-run-1.png<>uid://blnyyojtpg3hi::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/player/run/player-run-2.png<>uid://di6aes6n4ff7p::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/player/run/player-run-3.png<>uid://d3xoavdl7wj07::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/player/run/player-run-4.png<>uid://bu5awtv4sk8a7::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/player/run/player-run-5.png<>uid://2xxot6df4rtb::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/player/run/player-run-6.png
 ::res://Player/Sunny-land-files/::1706313743
 ::res://Player/Sunny-land-files/Sunny-land-files/::1706313743
 public-license.txt::TextFile::-1::1706313743::0::1::::<><>::
@@ -259,5 +273,50 @@ title-screen.png::CompressedTexture2D::8804665862420709816::1706313741::17063137
 ._loading.png::::-1::0::0::0::::<><>::
 ._press-enter-text.png::::-1::0::0::0::::<><>::
 ._title-screen.png::::-1::0::0::0::::<><>::
-::res://World/::1706370557
-world.tscn::PackedScene::1239789401033880047::1706370557::0::1::::<><>::uid://chqlkjcjvnsrk::::res://Player/Player.tscn<>uid://fx17s7mjud88::::res://BG/BG.tscn<>uid://bhe8h4dtftvqu::::res://Animals/GP/GP.tscn
+::res://Temp art/::1706371092
+char_a_p1_0bas_humn_v01.png::CompressedTexture2D::4228202389329623369::1706371092::1706371092::1::::<><>::
+Free Sprites 1x.png::CompressedTexture2D::4408931284291541294::1706371092::1706371092::1::::<><>::
+Free Sprites 2x.png::CompressedTexture2D::9139573886951593103::1706371092::1706371092::1::::<><>::
+Free Sprites 4x.png::CompressedTexture2D::8897744925071205637::1706371092::1706371092::1::::<><>::
+::res://Temp art/Clucking Chicken/::1706371092
+CluckingChickenIdleSide.png::CompressedTexture2D::6231098014934856574::1706371092::1706371092::1::::<><>::
+::res://Temp art/Coral Crab/::1706371092
+CoralCrabIdleSide.png::CompressedTexture2D::7174154218626457377::1706371092::1706371092::1::::<><>::
+::res://Temp art/Croaking Toad/::1706371092
+CroakingToadIdleSide.png::CompressedTexture2D::4623233483532697564::1706371092::1706371092::1::::<><>::
+::res://Temp art/Curious Monkey/::1706371092
+CuriousMonkeyIdleSide.png::CompressedTexture2D::4664651982311534086::1706371092::1706371092::1::::<><>::
+::res://Temp art/Dainty Pig/::1706371092
+DaintyPigIdleSide.png::CompressedTexture2D::3890243543037333138::1706371092::1706371092::1::::<><>::
+::res://Temp art/Faithful Dog/::1706371092
+FaithfulDogIdleSide.png::CompressedTexture2D::8851831484313486025::1706371092::1706371092::1::::<><>::
+::res://Temp art/Grazing Cow/::1706371092
+GrazingCowIdleSide.png::CompressedTexture2D::8770539172072294139::1706371092::1706371092::1::::<><>::
+::res://Temp art/Honking Goose/::1706371092
+HonkingGooseIdleSide.png::CompressedTexture2D::3980007762971204446::1706371092::1706371092::1::::<><>::
+::res://Temp art/Hulking Gorilla/::1706371092
+HulkingGorillaIdleSide.png::CompressedTexture2D::2857175977616505864::1706371092::1706371092::1::::<><>::
+::res://Temp art/Leaping Frog/::1706371092
+LeapingFrogIdleSide.png::CompressedTexture2D::7115400312698649940::1706371092::1706371092::1::::<><>::
+::res://Temp art/Mad Boar/::1706371092
+MadBoarIdleSide.png::CompressedTexture2D::8850026270225079720::1706371092::1706371092::1::::<><>::
+::res://Temp art/Majestic Moose/::1706371092
+MajesticMooseIdleSide.png::CompressedTexture2D::959177463684344177::1706371092::1706371092::1::::<><>::
+::res://Temp art/Meowing Cat/::1706371092
+MeowingCatIdleSide.png::CompressedTexture2D::1201781665676490184::1706371092::1706371092::1::::<><>::
+::res://Temp art/Nibbling Goat/::1706371092
+NibblingGoatIdleSide.png::CompressedTexture2D::8096237227443513478::1706371092::1706371092::1::::<><>::
+::res://Temp art/Pasturing Sheep/::1706371092
+PasturingSheepIdleSide.png::CompressedTexture2D::3769164056091992963::1706371092::1706371092::1::::<><>::
+::res://Temp art/Slow Turtle/::1706371092
+SlowTurtleIdleSide.png::CompressedTexture2D::5315145667898483230::1706371092::1706371092::1::::<><>::
+::res://Temp art/Snow Fox/::1706371092
+SnowFoxIdleSide.png::CompressedTexture2D::3741488221568277120::1706371092::1706371092::1::::<><>::
+::res://Temp art/Spikey Porcupine/::1706371092
+SpikeyPorcupineIdleSide.png::CompressedTexture2D::8553327345767347120::1706371092::1706371092::1::::<><>::
+::res://Temp art/Stinky Skunk/::1706371092
+StinkySkunkIdleSide.png::CompressedTexture2D::9044367103776675219::1706371092::1706371092::1::::<><>::
+::res://Temp art/Timber Wolf/::1706371092
+TimberWolfIdleSide.png::CompressedTexture2D::2096929082880074407::1706371092::1706371092::1::::<><>::
+::res://World/::1706380452
+world.tscn::PackedScene::1239789401033880047::1706380452::0::1::::<><>::uid://chqlkjcjvnsrk::::res://Player/Player.tscn<>uid://fx17s7mjud88::::res://BG/BG.tscn<>uid://bhe8h4dtftvqu::::res://Animals/GP/GP.tscn<>uid://dnlxjul83opo1::::res://Minigames/fish_balance.tscn
