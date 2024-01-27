@@ -8,4 +8,4 @@ func _ready():
 
 func _on_timeout():
 	#dog spawn timer random intervals
-	wait_time = randf_range(0.5, 2)
+	wait_time = randf_range(0.25, 2)

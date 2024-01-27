@@ -1,16 +1,57 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706317516
+::res://::1706325217
 icon.svg::CompressedTexture2D::7827958211160183153::1706312199::1706312209::1::::<><>::
-::res://Animals/::1706317417
-fishbowl_dog.gd::GDScript::-1::1706315521::0::1::::<>Area2D<>::
-fishbowl_dog.tscn::PackedScene::7965080667636424786::1706317417::0::1::::<><>::res://Animals/fishbowl_dog.gd<>uid://y0501312q07r::::res://Artwork/Dog_Sprites/dog_run1.png
+::res://Animals/::1706325175
+fishbowl_dog.gd::GDScript::-1::1706325030::0::1::::<>Area2D<>::
+fishbowl_dog.tscn::PackedScene::7965080667636424786::1706325175::0::1::::<><>::res://Animals/fishbowl_dog.gd<>uid://dyd5mvgx82qq8::::res://Temp art/Faithful Dog/FaithfulDogIdleSide.png
 ::res://Artwork/::1706317356
-::res://Artwork/Dog_Sprites/::1706317516
-dog_run1.png::CompressedTexture2D::1738009255874576293::1706317365::1706317366::1::::<><>::
-dog_run2.png::CompressedTexture2D::4810190454345141932::1706317365::1706317366::1::::<><>::
-dog_run3.png::CompressedTexture2D::4518795665192796870::1706317365::1706317366::1::::<><>::
-dog_run4.png::CompressedTexture2D::6198440684185715945::1706317365::1706317517::1::::<><>::
-::res://Minigames/::1706316988
-DogSpawner.gd::GDScript::-1::1706316505::0::1::::<>Node2D<>::
+::res://Artwork/Dog_Sprites/::1706323639
+::res://Minigames/::1706325175
+DogSpawner.gd::GDScript::-1::1706325175::0::1::::<>Node2D<>::
 DogSpawnerTimer.gd::GDScript::-1::1706314673::0::1::::<>Timer<>::
-fish_balance.tscn::PackedScene::8095838805644360386::1706316988::0::1::::<><>::uid://dlqlykn1b1tiw::::res://Animals/fishbowl_dog.tscn<>uid://djr6lfia1xuf6::::res://icon.svg<>res://Minigames/DogSpawner.gd<>res://Minigames/DogSpawnerTimer.gd
+fish_balance.tscn::PackedScene::8095838805644360386::1706325066::0::1::::<><>::uid://dlqlykn1b1tiw::::res://Animals/fishbowl_dog.tscn<>uid://djr6lfia1xuf6::::res://icon.svg<>res://Minigames/DogSpawner.gd<>res://Minigames/DogSpawnerTimer.gd
+::res://Temp art/::1706323907
+char_a_p1_0bas_humn_v01.png::CompressedTexture2D::4228202389329623369::1706323907::1706323907::1::::<><>::
+Free Sprites 1x.png::CompressedTexture2D::4408931284291541294::1706323880::1706323881::1::::<><>::
+Free Sprites 2x.png::CompressedTexture2D::9139573886951593103::1706323880::1706323881::1::::<><>::
+Free Sprites 4x.png::CompressedTexture2D::8897744925071205637::1706323880::1706323881::1::::<><>::
+::res://Temp art/Clucking Chicken/::1706323881
+CluckingChickenIdleSide.png::CompressedTexture2D::6231098014934856574::1706323880::1706323881::1::::<><>::
+::res://Temp art/Coral Crab/::1706323881
+CoralCrabIdleSide.png::CompressedTexture2D::7174154218626457377::1706323880::1706323881::1::::<><>::
+::res://Temp art/Croaking Toad/::1706323881
+CroakingToadIdleSide.png::CompressedTexture2D::4623233483532697564::1706323880::1706323881::1::::<><>::
+::res://Temp art/Curious Monkey/::1706323881
+CuriousMonkeyIdleSide.png::CompressedTexture2D::4664651982311534086::1706323880::1706323881::1::::<><>::
+::res://Temp art/Dainty Pig/::1706323881
+DaintyPigIdleSide.png::CompressedTexture2D::3890243543037333138::1706323880::1706323881::1::::<><>::
+::res://Temp art/Faithful Dog/::1706323881
+FaithfulDogIdleSide.png::CompressedTexture2D::8851831484313486025::1706323880::1706323881::1::::<><>::
+::res://Temp art/Grazing Cow/::1706323881
+GrazingCowIdleSide.png::CompressedTexture2D::8770539172072294139::1706323880::1706323881::1::::<><>::
+::res://Temp art/Honking Goose/::1706323881
+HonkingGooseIdleSide.png::CompressedTexture2D::3980007762971204446::1706323880::1706323881::1::::<><>::
+::res://Temp art/Hulking Gorilla/::1706323881
+HulkingGorillaIdleSide.png::CompressedTexture2D::2857175977616505864::1706323880::1706323881::1::::<><>::
+::res://Temp art/Leaping Frog/::1706323881
+LeapingFrogIdleSide.png::CompressedTexture2D::7115400312698649940::1706323880::1706323881::1::::<><>::
+::res://Temp art/Mad Boar/::1706323881
+MadBoarIdleSide.png::CompressedTexture2D::8850026270225079720::1706323880::1706323881::1::::<><>::
+::res://Temp art/Majestic Moose/::1706323881
+MajesticMooseIdleSide.png::CompressedTexture2D::959177463684344177::1706323880::1706323881::1::::<><>::
+::res://Temp art/Meowing Cat/::1706323881
+MeowingCatIdleSide.png::CompressedTexture2D::1201781665676490184::1706323880::1706323881::1::::<><>::
+::res://Temp art/Nibbling Goat/::1706323881
+NibblingGoatIdleSide.png::CompressedTexture2D::8096237227443513478::1706323880::1706323881::1::::<><>::
+::res://Temp art/Pasturing Sheep/::1706323881
+PasturingSheepIdleSide.png::CompressedTexture2D::3769164056091992963::1706323880::1706323881::1::::<><>::
+::res://Temp art/Slow Turtle/::1706323881
+SlowTurtleIdleSide.png::CompressedTexture2D::5315145667898483230::1706323880::1706323881::1::::<><>::
+::res://Temp art/Snow Fox/::1706323881
+SnowFoxIdleSide.png::CompressedTexture2D::3741488221568277120::1706323880::1706323881::1::::<><>::
+::res://Temp art/Spikey Porcupine/::1706323881
+SpikeyPorcupineIdleSide.png::CompressedTexture2D::8553327345767347120::1706323880::1706323881::1::::<><>::
+::res://Temp art/Stinky Skunk/::1706323881
+StinkySkunkIdleSide.png::CompressedTexture2D::9044367103776675219::1706323880::1706323881::1::::<><>::
+::res://Temp art/Timber Wolf/::1706323881
+TimberWolfIdleSide.png::CompressedTexture2D::2096929082880074407::1706323880::1706323881::1::::<><>::

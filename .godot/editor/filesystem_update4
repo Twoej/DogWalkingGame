@@ -1,6 +1,6 @@
 res://Minigames/fish_balance.tscn
 res://Animals/fishbowl_dog.tscn
 res://Minigames/DogSpawner.gd
-res://Minigames/DogSpawnerTimer.gd
 res://Animals/fishbowl_dog.gd
-res://Animals/DogSprite.gd
+res://Minigames/DogSpawnerTimer.gd
+res://Minigames/fish_balance.gd

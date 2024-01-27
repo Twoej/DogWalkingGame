@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dnlxjul83opo1"]
+[gd_scene load_steps=7 format=3 uid="uid://dnlxjul83opo1"]
 
 [ext_resource type="PackedScene" uid="uid://dlqlykn1b1tiw" path="res://Animals/fishbowl_dog.tscn" id="1_22xtv"]
 [ext_resource type="Texture2D" uid="uid://djr6lfia1xuf6" path="res://icon.svg" id="1_eam3p"]
+[ext_resource type="Script" path="res://Minigames/fish_balance.gd" id="1_yb7no"]
 [ext_resource type="Script" path="res://Minigames/DogSpawner.gd" id="2_achxp"]
 [ext_resource type="Script" path="res://Minigames/DogSpawnerTimer.gd" id="3_2gpg7"]
 
@@ -9,6 +10,7 @@
 size = Vector2(129, 352)
 
 [node name="FishBalance" type="Node2D"]
+script = ExtResource("1_yb7no")
 
 [node name="Fishbowl" type="Node2D" parent="."]
 
@@ -33,5 +35,6 @@ FishbowlDog_tscn = ExtResource("1_22xtv")
 autostart = true
 script = ExtResource("3_2gpg7")
 
+[connection signal="dog_spawned" from="DogSpawner" to="." method="_dog_spawned"]
 [connection signal="timeout" from="DogSpawner/DogSpawnerTimer" to="DogSpawner" method="_spawn_dog"]
 [connection signal="timeout" from="DogSpawner/DogSpawnerTimer" to="DogSpawner/DogSpawnerTimer" method="_on_timeout"]
