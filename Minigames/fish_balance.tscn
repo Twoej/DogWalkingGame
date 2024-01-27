@@ -1,22 +1,21 @@
-[gd_scene load_steps=7 format=3 uid="uid://dnlxjul83opo1"]
+[gd_scene load_steps=9 format=3 uid="uid://dnlxjul83opo1"]
 
 [ext_resource type="PackedScene" uid="uid://dlqlykn1b1tiw" path="res://Animals/fishbowl_dog.tscn" id="1_22xtv"]
 [ext_resource type="Texture2D" uid="uid://djr6lfia1xuf6" path="res://icon.svg" id="1_eam3p"]
 [ext_resource type="Script" path="res://Minigames/fish_balance.gd" id="1_yb7no"]
 [ext_resource type="Script" path="res://Minigames/DogSpawner.gd" id="2_achxp"]
 [ext_resource type="Script" path="res://Minigames/DogSpawnerTimer.gd" id="3_2gpg7"]
+[ext_resource type="Script" path="res://Minigames/Fishbowl.gd" id="3_r2ypj"]
+[ext_resource type="Texture2D" uid="uid://bo0aqfywltnh8" path="res://Artwork/Misc/fishbowl.png" id="3_ux2nd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g8dyw"]
-size = Vector2(129, 352)
+size = Vector2(133, 352)
 
 [node name="FishBalance" type="Node2D"]
 script = ExtResource("1_yb7no")
 
-[node name="Fishbowl" type="Node2D" parent="."]
-
 [node name="Player" type="Area2D" parent="."]
 position = Vector2(549, 501)
-metadata/_edit_group_ = true
 
 [node name="PlayerSprite" type="Sprite2D" parent="Player"]
 position = Vector2(0, -116)
@@ -24,8 +23,19 @@ scale = Vector2(1, 2.8125)
 texture = ExtResource("1_eam3p")
 
 [node name="PlayerCollision" type="CollisionShape2D" parent="Player"]
-position = Vector2(-1.5, -117)
+position = Vector2(0.5, -117)
 shape = SubResource("RectangleShape2D_g8dyw")
+
+[node name="Fishbowl" type="Node2D" parent="."]
+position = Vector2(508, 360)
+scale = Vector2(0.5, 0.5)
+script = ExtResource("3_r2ypj")
+metadata/_edit_group_ = true
+
+[node name="FishbowlSprite" type="Sprite2D" parent="Fishbowl"]
+texture = ExtResource("3_ux2nd")
+hframes = 2
+vframes = 3
 
 [node name="DogSpawner" type="Node2D" parent="."]
 script = ExtResource("2_achxp")
@@ -35,6 +45,7 @@ FishbowlDog_tscn = ExtResource("1_22xtv")
 autostart = true
 script = ExtResource("3_2gpg7")
 
+[connection signal="area_entered" from="Player" to="." method="_dog_passing"]
 [connection signal="dog_spawned" from="DogSpawner" to="." method="_dog_spawned"]
 [connection signal="timeout" from="DogSpawner/DogSpawnerTimer" to="DogSpawner" method="_spawn_dog"]
 [connection signal="timeout" from="DogSpawner/DogSpawnerTimer" to="DogSpawner/DogSpawnerTimer" method="_on_timeout"]

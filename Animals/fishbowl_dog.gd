@@ -13,7 +13,7 @@ func _ready():
 		speed = randf_range(-450, -550)
 	else:
 		speed = randf_range(450, 550)
-	var angle = randf_range(-0.15, 0.15)
+	var angle = randf_range(-0.1, 0.1)
 	var direction_vector = Vector2.ZERO
 	direction_vector.x = cos(angle)
 	direction_vector.y = sin(angle)
@@ -22,3 +22,5 @@ func _ready():
 func _process(delta):
 	position.x += speed_vector.x * delta
 	position.y += speed_vector.y * delta
+
+

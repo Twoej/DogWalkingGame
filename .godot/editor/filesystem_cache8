@@ -1,15 +1,19 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706325217
+::res://::1706370699
 icon.svg::CompressedTexture2D::7827958211160183153::1706312199::1706312209::1::::<><>::
-::res://Animals/::1706325175
-fishbowl_dog.gd::GDScript::-1::1706325030::0::1::::<>Area2D<>::
-fishbowl_dog.tscn::PackedScene::7965080667636424786::1706325175::0::1::::<><>::res://Animals/fishbowl_dog.gd<>uid://dyd5mvgx82qq8::::res://Temp art/Faithful Dog/FaithfulDogIdleSide.png
-::res://Artwork/::1706317356
+::res://Animals/::1706366438
+fishbowl_dog.gd::GDScript::-1::1706365482::0::1::::<>Area2D<>::
+fishbowl_dog.tscn::PackedScene::7965080667636424786::1706366438::0::1::::<><>::res://Animals/fishbowl_dog.gd<>uid://dyd5mvgx82qq8::::res://Temp art/Faithful Dog/FaithfulDogIdleSide.png
+::res://Artwork/::1706335250
 ::res://Artwork/Dog_Sprites/::1706323639
-::res://Minigames/::1706325175
-DogSpawner.gd::GDScript::-1::1706325175::0::1::::<>Node2D<>::
-DogSpawnerTimer.gd::GDScript::-1::1706314673::0::1::::<>Timer<>::
-fish_balance.tscn::PackedScene::8095838805644360386::1706325066::0::1::::<><>::uid://dlqlykn1b1tiw::::res://Animals/fishbowl_dog.tscn<>uid://djr6lfia1xuf6::::res://icon.svg<>res://Minigames/DogSpawner.gd<>res://Minigames/DogSpawnerTimer.gd
+::res://Artwork/Misc/::1706336810
+fishbowl.png::CompressedTexture2D::3420702811886624971::1706336806::1706336810::1::::<><>::
+::res://Minigames/::1706366438
+DogSpawner.gd::GDScript::-1::1706329261::0::1::::<>Node2D<>::
+DogSpawnerTimer.gd::GDScript::-1::1706333439::0::1::::<>Timer<>::
+Fishbowl.gd::GDScript::-1::1706339118::0::1::::<>Node2D<>::
+fish_balance.gd::GDScript::-1::1706366437::0::1::::<>Node2D<>::
+fish_balance.tscn::PackedScene::8095838805644360386::1706366438::0::1::::<><>::uid://dlqlykn1b1tiw::::res://Animals/fishbowl_dog.tscn<>uid://djr6lfia1xuf6::::res://icon.svg<>res://Minigames/fish_balance.gd<>res://Minigames/DogSpawner.gd<>res://Minigames/DogSpawnerTimer.gd<>res://Minigames/Fishbowl.gd<>uid://bo0aqfywltnh8::::res://Artwork/Misc/fishbowl.png
 ::res://Temp art/::1706323907
 char_a_p1_0bas_humn_v01.png::CompressedTexture2D::4228202389329623369::1706323907::1706323907::1::::<><>::
 Free Sprites 1x.png::CompressedTexture2D::4408931284291541294::1706323880::1706323881::1::::<><>::

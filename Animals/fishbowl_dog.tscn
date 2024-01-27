@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pceq8"]
 size = Vector2(17, 15)
 
-[node name="FishbowlDog" type="Area2D"]
+[node name="FishbowlDog" type="Area2D" groups=["dog"]]
 scale = Vector2(7, 7)
 script = ExtResource("1_2cna1")
 metadata/_edit_group_ = true
