@@ -1,3 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706312473
+::res://::1706317516
 icon.svg::CompressedTexture2D::7827958211160183153::1706312199::1706312209::1::::<><>::
+::res://Animals/::1706317417
+fishbowl_dog.gd::GDScript::-1::1706315521::0::1::::<>Area2D<>::
+fishbowl_dog.tscn::PackedScene::7965080667636424786::1706317417::0::1::::<><>::res://Animals/fishbowl_dog.gd<>uid://y0501312q07r::::res://Artwork/Dog_Sprites/dog_run1.png
+::res://Artwork/::1706317356
+::res://Artwork/Dog_Sprites/::1706317516
+dog_run1.png::CompressedTexture2D::1738009255874576293::1706317365::1706317366::1::::<><>::
+dog_run2.png::CompressedTexture2D::4810190454345141932::1706317365::1706317366::1::::<><>::
+dog_run3.png::CompressedTexture2D::4518795665192796870::1706317365::1706317366::1::::<><>::
+dog_run4.png::CompressedTexture2D::6198440684185715945::1706317365::1706317517::1::::<><>::
+::res://Minigames/::1706316988
+DogSpawner.gd::GDScript::-1::1706316505::0::1::::<>Node2D<>::
+DogSpawnerTimer.gd::GDScript::-1::1706314673::0::1::::<>Timer<>::
+fish_balance.tscn::PackedScene::8095838805644360386::1706316988::0::1::::<><>::uid://dlqlykn1b1tiw::::res://Animals/fishbowl_dog.tscn<>uid://djr6lfia1xuf6::::res://icon.svg<>res://Minigames/DogSpawner.gd<>res://Minigames/DogSpawnerTimer.gd
