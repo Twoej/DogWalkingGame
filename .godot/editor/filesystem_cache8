@@ -1,6 +1,8 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706464831
-Global.gd::GDScript::-1::1706462235::0::1::::<>Node<>::
+::res://::1706467438
+GameEnd.gd::GDScript::-1::1706467411::0::1::::<>Timer<>::
+GameEnd.tscn::PackedScene::2164324162334763361::1706467414::0::1::::<><>::res://GameEnd.gd
+Global.gd::GDScript::-1::1706466764::0::1::::<>Node<>::
 GP.gd::GDScript::-1::1706380804::0::1::::<>Node2D<>::
 icon.svg::CompressedTexture2D::7827958211160183153::1706312199::1706393513::1::::<><>::
 ::res://Animals/::1706402666
@@ -63,19 +65,19 @@ BG.gd::GDScript::-1::1706380804::0::1::::<>ParallaxBackground<>::
 BG.tscn::PackedScene::400061689162508223::1706388870::0::1::::<><>::res://BG/BG.gd
 ::res://Minigames/::1706421807
 ::res://Minigames/Ant/::1706394083
-::res://Minigames/Ant/Game1/::1706458574
+::res://Minigames/Ant/Game1/::1706464875
 AntCounter.gd::GDScript::-1::1706393661::0::1::::<>Label<>::
 AntSpawner.gd::GDScript::-1::1706393661::0::1::::<>Node2D<>::
-ant_collecting.gd::GDScript::-1::1706458574::0::1::::<>Node2D<>::
+ant_collecting.gd::GDScript::-1::1706464875::0::1::::<>Node2D<>::
 ant_collecting.tscn::PackedScene::6998562577718852808::1706424683::0::1::::<><>::res://Minigames/Ant/Game1/ant_collecting.gd<>res://Minigames/Ant/Game1/AntSpawner.gd<>uid://sj53c0kb48lu::::res://Minigames/Ant/Game1/ecaped_ant.tscn<>res://Minigames/Ant/Game1/AntCounter.gd<>res://Minigames/Ant/Game1/LoseTimerLabel.gd
 ecaped_ant.gd::GDScript::-1::1706393661::0::1::::<>Area2D<>::
 ecaped_ant.tscn::PackedScene::1283850241407131526::1706394082::0::1::::<><>::res://Minigames/Ant/Game1/ecaped_ant.gd<>uid://bj0dh70fdfdvf::::res://Artwork/AntSprites/Untitled_Artwork-1 (9).png
 LoseTimerLabel.gd::GDScript::-1::1706393661::0::1::::<>Label<>::
-::res://Minigames/Dog/::1706393661
-::res://Minigames/Dog/AidenDog/::1706414810
-ChasedPosition.gd::GDScript::-1::1706403543::0::1::::<>Node2D<>::
-DogChase.gd::GDScript::-1::1706393661::0::1::::<>Area2D<>::
-DogChase.tscn::PackedScene::8028622439489577133::1706414810::0::1::::<><>::res://Animals/GP/DogChase.gd<>uid://cddmjbfnqhh2q::::res://Artwork/DogSprites/Untitled_Artwork-1 (2).png<>uid://dbq853c1sjg0r::::res://Artwork/DogSprites/Untitled_Artwork-2 (2).png<>res://Minigames/Dog/AidenDog/ChasedPosition.gd
+::res://Minigames/Dog/::1706466399
+::res://Minigames/Dog/Game1/::1706467414
+fetch.gd::GDScript::-1::1706461260::0::1::::<>Node2D<>::
+fetch.tscn::PackedScene::1906950828121364179::1706467414::0::1::::<><>::res://Minigames/NormalDog/Game1/fetch.gd<>uid://0ls6q4qovcgb::::res://Artwork/Misc/tennis-ball.png<>res://Minigames/NormalDog/Game1/Mouse.gd<>uid://53odq1f0orlh::::res://GameEnd.tscn
+Mouse.gd::GDScript::-1::1706424983::0::1::::<>Area2D<>::
 ::res://Minigames/Fish/::1706393661
 ::res://Minigames/Fish/Game1/::1706422842
 DogSpawner.gd::GDScript::-1::1706396373::0::1::::<>Node2D<>::
@@ -99,9 +101,9 @@ player.gd::GDScript::-1::1706421627::0::1::::<>Area2D<>::
 player.tscn::PackedScene::3134608107872757514::1706421631::0::1::::<><>::res://Minigames/GuineaPig/Game1/player.gd<>uid://bd5yc66amaesi::::res://Artwork/PlayerSprites/Untitled_Artwork-1 (7).png<>uid://8c64wtdj6pxw::::res://Artwork/PlayerSprites/Untitled_Artwork-2 (8).png<>uid://cd1u32c4pjyl5::::res://Artwork/PlayerSprites/Untitled_Artwork-3 (6).png<>uid://dj8uhe2du5li7::::res://Artwork/PlayerSprites/Untitled_Artwork-4 (4).png<>uid://b4bjfgjk6yi2m::::res://Artwork/PlayerSprites/Untitled_Artwork-1 (8).png
 spawner.gd::GDScript::-1::1706419513::0::1::::<>Node2D<>::
 ::res://Minigames/NormalDog/::1706421812
-::res://Minigames/NormalDog/Game1/::1706461294
-fetch.gd::GDScript::-1::1706461260::0::1::::<>Node2D<>::
-fetch.tscn::PackedScene::1906950828121364179::1706461294::0::1::::<><>::res://Minigames/NormalDog/Game1/fetch.gd<>uid://0ls6q4qovcgb::::res://Artwork/Misc/tennis-ball.png<>res://Minigames/NormalDog/Game1/Mouse.gd<>uid://o4swg86b116d::::res://Artwork/Misc/laserRed04.png<>res://Minigames/NormalDog/Game1/Laser.gd
+::res://Minigames/NormalDog/Game1/::1706467385
+fetch.gd::GDScript::-1::1706467385::0::1::::<>Node2D<>::
+fetch.tscn::PackedScene::1906950828121364179::1706464910::0::1::::<><>::res://Minigames/NormalDog/Game1/fetch.gd<>uid://0ls6q4qovcgb::::res://Artwork/Misc/tennis-ball.png<>res://Minigames/NormalDog/Game1/Mouse.gd<>uid://o4swg86b116d::::res://Artwork/Misc/laserRed04.png<>res://Minigames/NormalDog/Game1/Laser.gd
 Laser.gd::GDScript::-1::1706460659::0::1::::<>Node2D<>::
 Mouse.gd::GDScript::-1::1706424983::0::1::::<>Area2D<>::
 ::res://Minigames/UFO/::1706393950
@@ -160,11 +162,11 @@ SpikeyPorcupineIdleSide.png::CompressedTexture2D::8553327345767347120::170632388
 StinkySkunkIdleSide.png::CompressedTexture2D::9044367103776675219::1706323880::1706323881::1::::<><>::
 ::res://Temp art/Timber Wolf/::1706393502
 TimberWolfIdleSide.png::CompressedTexture2D::2096929082880074407::1706323880::1706323881::1::::<><>::
-::res://World/::1706462428
+::res://World/::1706466353
 Beacon.gd::GDScript::-1::1706393661::0::1::::<>Node2D<>::
 MinigameTimer.gd::GDScript::-1::1706426283::0::1::::<>Timer<>::
 Node2D.gd::GDScript::-1::1706393661::0::1::::<>Node2D<>::
 StaticBody2D.gd::GDScript::-1::1706403543::0::1::::<>StaticBody2D<>::
 Timer.gd::GDScript::-1::1706393661::0::1::::<>Timer<>::
-world.gd::GDScript::-1::1706462417::0::1::::<>Node2D<>::
-world.tscn::PackedScene::1239789401033880047::1706462428::0::1::::<><>::res://World/world.gd<>res://World/StaticBody2D.gd<>uid://chqlkjcjvnsrk::::res://Player/Player.tscn<>uid://fx17s7mjud88::::res://BG/BG.tscn<>uid://cyijpy52icdw6::::res://Minigames/GuineaPig/Game1/GuineaPigChase.tscn<>uid://dnlxjul83opo1::::res://Minigames/Fish/Game1/fish_balance.tscn<>uid://c6yfkkpditq3y::::res://Minigames/Ant/Game1/ant_collecting.tscn<>uid://dmneid2hxgmft::::res://Minigames/Dog/AidenDog/DogChase.tscn<>uid://2f0g377adcyd::::res://Minigames/NormalDog/Game1/fetch.tscn<>uid://bhvui6y2jbioe::::res://Minigames/UFO/Game1/martian_falling.tscn<>res://World/MinigameTimer.gd
+world.gd::GDScript::-1::1706466269::0::1::::<>Node2D<>::
+world.tscn::PackedScene::1239789401033880047::1706466353::0::1::::<><>::res://World/world.gd<>res://World/StaticBody2D.gd<>uid://chqlkjcjvnsrk::::res://Player/Player.tscn<>uid://fx17s7mjud88::::res://BG/BG.tscn<>uid://dmneid2hxgmft::::res://Minigames/Dog/AidenDog/DogChase.tscn<>res://World/MinigameTimer.gd

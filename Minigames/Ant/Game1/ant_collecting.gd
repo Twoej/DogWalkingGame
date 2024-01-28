@@ -17,7 +17,8 @@ func _process(delta):
 		$Mouse.position = get_global_mouse_position()
 	
 	if (ant_count == 0):
-		pass #Win
+		$GameEnd.Start(2)
+		$GameEnd._win()
 	
 
 func _on_mouse_area_entered(ant):
@@ -27,4 +28,5 @@ func _on_mouse_area_entered(ant):
 
 
 func _on_lose_timer_timeout():
-	pass #Loss
+	$GameEnd.start(2)
+	$GameEnd._Loss()

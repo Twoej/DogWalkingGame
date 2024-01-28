@@ -1,9 +1,16 @@
-[gd_scene load_steps=10 format=3 uid="uid://rwtfd0mw4b0r"]
+[gd_scene load_steps=18 format=3 uid="uid://rwtfd0mw4b0r"]
 
+[ext_resource type="Script" path="res://World/world.gd" id="1_4ulmi"]
 [ext_resource type="Script" path="res://World/StaticBody2D.gd" id="1_7j11v"]
 [ext_resource type="PackedScene" uid="uid://chqlkjcjvnsrk" path="res://Player/Player.tscn" id="1_bq0mn"]
 [ext_resource type="PackedScene" uid="uid://fx17s7mjud88" path="res://BG/BG.tscn" id="2_7w2qg"]
+[ext_resource type="PackedScene" uid="uid://cyijpy52icdw6" path="res://Minigames/GuineaPig/Game1/GuineaPigChase.tscn" id="2_mpdyn"]
+[ext_resource type="PackedScene" uid="uid://dnlxjul83opo1" path="res://Minigames/Fish/Game1/fish_balance.tscn" id="3_kn3fn"]
+[ext_resource type="PackedScene" uid="uid://c6yfkkpditq3y" path="res://Minigames/Ant/Game1/ant_collecting.tscn" id="4_vsra0"]
 [ext_resource type="PackedScene" uid="uid://dmneid2hxgmft" path="res://Minigames/Dog/AidenDog/DogChase.tscn" id="4_wpd6t"]
+[ext_resource type="PackedScene" uid="uid://2f0g377adcyd" path="res://Minigames/NormalDog/Game1/fetch.tscn" id="5_gmq5l"]
+[ext_resource type="PackedScene" uid="uid://bhvui6y2jbioe" path="res://Minigames/UFO/Game1/martian_falling.tscn" id="5_hqf2n"]
+[ext_resource type="Script" path="res://World/MinigameTimer.gd" id="6_47ehe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0f6a2"]
 size = Vector2(2797.06, 64)
@@ -20,7 +27,16 @@ size = Vector2(26.5, 423)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wexfm"]
 size = Vector2(3, 228)
 
+[sub_resource type="LabelSettings" id="LabelSettings_7djgu"]
+font_size = 30
+
 [node name="World" type="Node2D"]
+script = ExtResource("1_4ulmi")
+minigame2 = ExtResource("2_mpdyn")
+minigame3 = ExtResource("3_kn3fn")
+minigame4 = ExtResource("4_vsra0")
+minigame5 = ExtResource("5_hqf2n")
+minigame6 = ExtResource("5_gmq5l")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(-118, 82)
@@ -72,6 +88,23 @@ position = Vector2(-49, 147)
 [node name="DogChase" parent="." groups=["Mobs"] instance=ExtResource("4_wpd6t")]
 position = Vector2(346, 130)
 
+[node name="MinigameTimer" type="Timer" parent="."]
+script = ExtResource("6_47ehe")
+
+[node name="MinigameNotif" type="Label" parent="."]
+offset_left = -44.0
+offset_top = 35.0
+offset_right = -4.0
+offset_bottom = 58.0
+label_settings = SubResource("LabelSettings_7djgu")
+
+[node name="LoadTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
 [connection signal="body_entered" from="StaticBody2D/TPEnd" to="StaticBody2D" method="_on_tp_end_body_entered"]
 [connection signal="body_entered" from="StaticBody2D/TPBegin" to="StaticBody2D" method="_on_tp_begin_body_entered"]
 [connection signal="timeout" from="Player/Timer" to="Player" method="_on_timer_timeout"]
+[connection signal="timeout" from="MinigameTimer" to="." method="_on_minigame_timer_timeout"]
+[connection signal="timeout" from="MinigameTimer" to="MinigameTimer" method="_on_timeout"]
+[connection signal="timeout" from="LoadTimer" to="." method="_on_load_timer_timeout"]

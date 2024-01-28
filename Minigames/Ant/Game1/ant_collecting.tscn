@@ -1,10 +1,11 @@
-[gd_scene load_steps=13 format=3 uid="uid://c6yfkkpditq3y"]
+[gd_scene load_steps=14 format=3 uid="uid://c6yfkkpditq3y"]
 
 [ext_resource type="Script" path="res://Minigames/Ant/Game1/ant_collecting.gd" id="1_nsxem"]
 [ext_resource type="Script" path="res://Minigames/Ant/Game1/AntSpawner.gd" id="1_tda4l"]
 [ext_resource type="PackedScene" uid="uid://sj53c0kb48lu" path="res://Minigames/Ant/Game1/ecaped_ant.tscn" id="2_knyrp"]
 [ext_resource type="Script" path="res://Minigames/Ant/Game1/AntCounter.gd" id="3_vtlxo"]
 [ext_resource type="Script" path="res://Minigames/Ant/Game1/LoseTimerLabel.gd" id="4_u8ykp"]
+[ext_resource type="PackedScene" uid="uid://53odq1f0orlh" path="res://GameEnd.tscn" id="6_sbts2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_250j1"]
 size = Vector2(957, 1788.5)
@@ -78,6 +79,8 @@ offset_right = 639.0
 offset_bottom = 128.0
 label_settings = SubResource("LabelSettings_7qv11")
 script = ExtResource("4_u8ykp")
+
+[node name="GameEnd" parent="." instance=ExtResource("6_sbts2")]
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="area_entered" from="Mouse" to="." method="_on_mouse_area_entered"]

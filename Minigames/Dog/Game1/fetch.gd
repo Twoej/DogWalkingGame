@@ -28,14 +28,8 @@ func _on_ground_body_entered(ball):
 func _on_mouse_body_entered(ball):
 	if (ball.is_in_group("ball")):
 		ball_pos = ball.position
-		var ball_direction_vector = ball_pos - $Laser/LaserSprite.position
-		var ball_unit_vector = ball_direction_vector / sqrt(pow(ball_direction_vector.x, 2) + pow(ball_direction_vector.y, 2))
-		$Laser.look_at(ball.position)
-		$Laser/LaserSprite.set_visible(true)
-		$Laser._move(ball_unit_vector)
-		ball.queue_free()
+		ball.queue_free
 		$GameEnd.start(2)
 		$GameEnd._win()
-		
 
 

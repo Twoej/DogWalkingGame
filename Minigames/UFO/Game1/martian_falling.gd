@@ -7,4 +7,10 @@ func _on_trampoline_area_entered(martian):
 
 
 func _on_win_timer_timeout():
-	pass
+	$GameEnd.start(2)
+	$GameEnd._win()
+
+
+func _on_ground_area_entered(area):
+	$GameEnd.start(2)
+	$GameEnd._loss()

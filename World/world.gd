@@ -1,16 +1,20 @@
 extends Node2D
 
-@export var minigame1: PackedScene
-@export var minigame2: PackedScene
-@export var minigame3: PackedScene
-@export var minigame4: PackedScene
-@export var minigame5: PackedScene
-@export var minigame6: PackedScene
-@export var minigame7: PackedScene
+var minigame1: PackedScene = preload("res://Minigames/GuineaPig/Game1/GuineaPigChase.tscn")
+var minigame2: PackedScene = preload("res://Minigames/GuineaPig/Game1/GuineaPigChase.tscn")
+var minigame3: PackedScene = preload("res://Minigames/Fish/Game1/fish_balance.tscn")
+var minigame4: PackedScene = preload("res://Minigames/Ant/Game1/ant_collecting.tscn")
+var minigame5: PackedScene = preload("res://Animals/martian_falling.tscn")
+var minigame6: PackedScene = preload("res://Minigames/NormalDog/Game1/fetch.tscn")
+var minigame7: PackedScene = preload("res://Minigames/GuineaPig/Game1/GuineaPigChase.tscn")
 
 var minigame_list = [minigame1, minigame2, minigame3, minigame4, minigame5, minigame6, minigame7]
 
 var upcoming_scene: PackedScene
+
+func _ready():
+	if ($"/root/Global".minigames_played >= 4):
+		$"/root/Global".current_day += 1
 
 func _on_minigame_timer_timeout():
 	var minigame = randi_range(0, $"/root/Global".current_day - 1)
@@ -40,6 +44,7 @@ func _on_minigame_timer_timeout():
 		$LoadTimer.start(2)
 		
 	upcoming_scene = minigame_list[minigame]
+	
 
 func _on_load_timer_timeout():
 	get_tree().change_scene_to_packed(upcoming_scene)
