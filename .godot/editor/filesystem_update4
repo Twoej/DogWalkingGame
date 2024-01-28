@@ -6,3 +6,13 @@ res://Animals/martian_falling.gd
 res://Minigames/Ant/Game1/ant_collecting.tscn
 res://Minigames/Fish/Game1/fishbowl_dog.tscn
 res://Minigames/Fish/Game1/fish_balance.tscn
+res://World/world.tscn
+res://Player/Player.gd
+res://Minigames/UFO/Game1/martian_falling.tscn
+res://Minigames/UFO/Game1/MartianSpawner.gd
+res://Minigames/Fish/Game1/DogSpawner.gd
+res://Minigames/UFO/Game1/MartianSpawnerTimer.gd
+res://Minigames/UFO/Game1/martian_falling.gd
+res://Minigames/UFO/Game1/Trampoline.gd
+res://Minigames/UFO/Game1/WinTimerLabel.gd
+res://Minigames/Fish/Game1/fish_balance.gd

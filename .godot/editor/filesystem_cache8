@@ -1,19 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706393512
+::res://::1706394084
 GP.gd::GDScript::-1::1706380804::0::1::::<>Node2D<>::
 icon.svg::CompressedTexture2D::7827958211160183153::1706312199::1706393513::1::::<><>::
-::res://Animals/::1706393501
-AntSpawner.gd::GDScript::-1::1706385333::0::1::::<>Node2D<>::
-ecaped_ant.gd::GDScript::-1::1706388644::0::1::::<>Area2D<>::
-ecaped_ant.tscn::PackedScene::1283850241407131526::1706391182::0::1::::<><>::res://Animals/ecaped_ant.gd<>uid://dl8jdjtupw6hn::::res://Artwork/AntSprites/Untitled_Artwork-1 (9).png
-fishbowl_dog.gd::GDScript::-1::1706373142::0::1::::<>Area2D<>::
-fishbowl_dog.tscn::PackedScene::7965080667636424786::1706382373::0::1::::<><>::res://Animals/fishbowl_dog.gd<>uid://dyd5mvgx82qq8::::res://Temp art/Faithful Dog/FaithfulDogIdleSide.png
-martian_falling.tscn::PackedScene::18149998459660990::1706391603::0::1::::<><>::
-::res://Animals/GP/::1706393501
+::res://Animals/::1706397165
+martian_falling.gd::GDScript::-1::1706396157::0::1::::<>Area2D<>::
+martian_falling.tscn::PackedScene::18149998459660990::1706397165::0::1::::<><>::res://Animals/martian_falling.gd<>uid://b7puev7jt4g27::::res://Temp art/Curious Monkey/CuriousMonkeyIdleSide.png
+::res://Animals/GP/::1706393661
 DogChase.gd::GDScript::-1::1706388869::0::1::::<>CharacterBody2D<>::
-GP.tscn::PackedScene::2888017790176488208::1706380804::0::1::::<><>::uid://c0wu2b1t5fikk::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-1.png<>uid://cb8s061i4301a::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-2.png<>uid://btxrrxk41j0c::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-3.png<>uid://b7le3sv03d2cd::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-4.png<>uid://dg2w15r8heiyy::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-5.png<>res://Animals/GP/GP.gd<>uid://bnu077k66326o::::res://Player/Sunny-land-files/Sunny-land-files/Graphical Assets/sprites/opossum/opossum-6.png
+GP.tscn::PackedScene::2888017790176488208::1706393661::0::1::::<><>::res://Animals/GP/PlayerDetection.gd
 PlayerDetection.gd::GDScript::-1::1706380804::0::1::::<>Area2D<>::
-::res://Artwork/::1706393501
+::res://Artwork/::1706397580
 ::res://Artwork/AntSprites/::1706393501
 Untitled_Artwork-1 (9).png::CompressedTexture2D::3069926091421222419::1706389256::1706389339::1::::<><>::
 ::res://Artwork/DogSprites/::1706393501
@@ -27,6 +23,14 @@ Untitled_Artwork-2 (4) (1).png::CompressedTexture2D::7402334544505367912::170638
 Untitled_Artwork-2 (4).png::CompressedTexture2D::3321003804781478950::1706388869::1706389339::1::::<><>::
 ::res://Artwork/GPSprites/::1706393501
 Untitled_Artwork-1 (6).png::CompressedTexture2D::323338973480586415::1706389317::1706389317::1::::<><>::
+::res://Artwork/MartianSprites/::1706397948
+alien-1.png::CompressedTexture2D::1303921710123411877::1706397589::1706397590::1::::<><>::
+alien-2.png::CompressedTexture2D::2634334022814344929::1706397589::1706397590::1::::<><>::
+alien-3.png::CompressedTexture2D::853190323669078558::1706397589::1706397590::1::::<><>::
+alien-4.png::CompressedTexture2D::2625092653488513248::1706397589::1706397590::1::::<><>::
+alien-5.png::CompressedTexture2D::984160104125821209::1706397589::1706397590::1::::<><>::
+alien-6.png::CompressedTexture2D::5685575761711334770::1706397589::1706397590::1::::<><>::
+MartianSpritesheet.png::CompressedTexture2D::1854857707689082283::1706397948::1706397952::1::::<><>::
 ::res://Artwork/Misc/::1706393501
 fish.png::CompressedTexture2D::5222165045871939132::1706376280::1706376281::1::::<><>::
 fishbowl.png::CompressedTexture2D::3420702811886624971::1706336806::1706336810::1::::<><>::
@@ -41,24 +45,39 @@ Untitled_Artwork-1 (5).png::CompressedTexture2D::6001650410795659514::1706389317
 ::res://BG/::1706393501
 BG.gd::GDScript::-1::1706380804::0::1::::<>ParallaxBackground<>::
 BG.tscn::PackedScene::400061689162508223::1706388870::0::1::::<><>::res://BG/BG.gd
-::res://Minigames/::1706393501
-AntCounter.gd::GDScript::-1::1706390859::0::1::::<>Label<>::
-AntSpawner.gd::GDScript::-1::1706387031::0::1::::<>Node2D<>::
-ant_collecting.tscn::PackedScene::6998562577718852808::1706391251::0::1::::<><>::res://Minigames/AntSpawner.gd<>uid://sj53c0kb48lu::::res://Animals/ecaped_ant.tscn<>res://Minigames/AntCounter.gd<>res://Minigames/LoseTimerLabel.gd
-ChasedPosition.gd::GDScript::-1::1706388870::0::1::::<>Node2D<>::
-DogChase.gd::GDScript::-1::1706380804::0::1::::<>Area2D<>::
-DogChase.tscn::PackedScene::8028622439489577133::1706388870::0::1::::<><>::res://Animals/GP/DogChase.gd<>res://Minigames/ChasedPosition.gd
-DogSpawner.gd::GDScript::-1::1706329261::0::1::::<>Node2D<>::
-DogSpawnerTimer.gd::GDScript::-1::1706373122::0::1::::<>Timer<>::
-Fishbowl.gd::GDScript::-1::1706375547::0::1::::<>Node2D<>::
-FishbowlSprite.gd::GDScript::-1::1706378268::0::1::::<>Sprite2D<>::
-fish_balance.gd::GDScript::-1::1706379694::0::1::::<>Node2D<>::
-fish_balance.tscn::PackedScene::8095838805644360386::1706387836::0::1::::<><>::uid://dlqlykn1b1tiw::::res://Animals/fishbowl_dog.tscn<>res://Minigames/fish_balance.gd<>res://Minigames/DogSpawner.gd<>uid://d24w4wn6lg50g::::res://Artwork/Misc/fishbowl_woman.png<>res://Minigames/DogSpawnerTimer.gd<>res://Minigames/Fishbowl.gd<>uid://bo0aqfywltnh8::::res://Artwork/Misc/fishbowl.png<>res://Minigames/FishbowlSprite.gd<>uid://dosoetfto2sxg::::res://Artwork/Misc/fish_right.png<>uid://ij2hym0xiktc::::res://Artwork/Misc/fish_left.png<>uid://cgnwkbn7lkr3a::::res://Artwork/Misc/fish.png<>res://Minigames/TimeLeft.gd
-LoseTimerLabel.gd::GDScript::-1::1706391164::0::1::::<>Label<>::
-martian_falling.tscn::PackedScene::2922324814739144440::1706391581::0::1::::<><>::
-TimeLeft.gd::GDScript::-1::1706380423::0::1::::<>Label<>::
-::res://Player/::1706393501
-Player.gd::GDScript::-1::1706388870::0::1::::<>CharacterBody2D<>::
+::res://Minigames/::1706393952
+::res://Minigames/Ant/::1706394083
+::res://Minigames/Ant/Game1/::1706394093
+AntCounter.gd::GDScript::-1::1706393661::0::1::::<>Label<>::
+AntSpawner.gd::GDScript::-1::1706393661::0::1::::<>Node2D<>::
+ant_collecting.tscn::PackedScene::6998562577718852808::1706394093::0::1::::<><>::res://Minigames/Ant/Game1/AntSpawner.gd<>uid://sj53c0kb48lu::::res://Minigames/Ant/Game1/ecaped_ant.tscn<>res://Minigames/Ant/Game1/AntCounter.gd<>res://Minigames/Ant/Game1/LoseTimerLabel.gd
+ecaped_ant.gd::GDScript::-1::1706393661::0::1::::<>Area2D<>::
+ecaped_ant.tscn::PackedScene::1283850241407131526::1706394082::0::1::::<><>::res://Minigames/Ant/Game1/ecaped_ant.gd<>uid://bj0dh70fdfdvf::::res://Artwork/AntSprites/Untitled_Artwork-1 (9).png
+LoseTimerLabel.gd::GDScript::-1::1706393661::0::1::::<>Label<>::
+::res://Minigames/Dog/::1706393661
+::res://Minigames/Dog/AidenDog/::1706393661
+ChasedPosition.gd::GDScript::-1::1706393661::0::1::::<>Node2D<>::
+DogChase.gd::GDScript::-1::1706393661::0::1::::<>Area2D<>::
+DogChase.tscn::PackedScene::8028622439489577133::1706393661::0::1::::<><>::res://Animals/GP/DogChase.gd<>res://Minigames/Dog/AidenDog/ChasedPosition.gd
+::res://Minigames/Fish/::1706393661
+::res://Minigames/Fish/Game1/::1706396373
+DogSpawner.gd::GDScript::-1::1706396373::0::1::::<>Node2D<>::
+DogSpawnerTimer.gd::GDScript::-1::1706393661::0::1::::<>Timer<>::
+Fishbowl.gd::GDScript::-1::1706393661::0::1::::<>Node2D<>::
+FishbowlSprite.gd::GDScript::-1::1706393661::0::1::::<>Sprite2D<>::
+fishbowl_dog.gd::GDScript::-1::1706393661::0::1::::<>Area2D<>::
+fishbowl_dog.tscn::PackedScene::7965080667636424786::1706393826::0::1::::<><>::res://Minigames/Fish/Game1/fishbowl_dog.gd<>uid://dyd5mvgx82qq8::::res://Temp art/Faithful Dog/FaithfulDogIdleSide.png
+fish_balance.gd::GDScript::-1::1706393661::0::1::::<>Node2D<>::
+fish_balance.tscn::PackedScene::8095838805644360386::1706393826::0::1::::<><>::uid://dlqlykn1b1tiw::::res://Minigames/Fish/Game1/fishbowl_dog.tscn<>res://Minigames/Fish/Game1/fish_balance.gd<>res://Minigames/Fish/Game1/DogSpawner.gd<>uid://d24w4wn6lg50g::::res://Artwork/Misc/fishbowl_woman.png<>res://Minigames/Fish/Game1/DogSpawnerTimer.gd<>res://Minigames/Fish/Game1/Fishbowl.gd<>uid://bo0aqfywltnh8::::res://Artwork/Misc/fishbowl.png<>res://Minigames/Fish/Game1/FishbowlSprite.gd<>uid://dosoetfto2sxg::::res://Artwork/Misc/fish_right.png<>uid://ij2hym0xiktc::::res://Artwork/Misc/fish_left.png<>uid://cgnwkbn7lkr3a::::res://Artwork/Misc/fish.png<>res://Minigames/Fish/Game1/TimeLeft.gd
+TimeLeft.gd::GDScript::-1::1706393661::0::1::::<>Label<>::
+::res://Minigames/UFO/::1706393950
+::res://Minigames/UFO/Game1/::1706397177
+MartianSpawner.gd::GDScript::-1::1706396887::0::1::::<>Node2D<>::
+MartianSpawnerTimer.gd::GDScript::-1::1706397164::0::1::::<>Timer<>::
+martian_falling.gd::GDScript::-1::1706397095::0::1::::<>Node2D<>::
+martian_falling.tscn::PackedScene::2922324814739144440::1706397177::0::1::::<><>::res://Minigames/UFO/Game1/martian_falling.gd<>res://Minigames/UFO/Game1/MartianSpawner.gd<>uid://i16stfecnkg::::res://Animals/martian_falling.tscn<>res://Minigames/UFO/Game1/MartianSpawnerTimer.gd
+::res://Player/::1706394000
+Player.gd::GDScript::-1::1706394000::0::1::::<>CharacterBody2D<>::
 Player.tscn::PackedScene::5297879538014139628::1706388870::0::1::::<><>::res://Player/Player.gd<>uid://b7puev7jt4g27::::res://Temp art/Curious Monkey/CuriousMonkeyIdleSide.png
 ::res://Temp art/::1706393502
 char_a_p1_0bas_humn_v01.png::CompressedTexture2D::4228202389329623369::1706323907::1706323907::1::::<><>::
@@ -105,6 +124,9 @@ SpikeyPorcupineIdleSide.png::CompressedTexture2D::8553327345767347120::170632388
 StinkySkunkIdleSide.png::CompressedTexture2D::9044367103776675219::1706323880::1706323881::1::::<><>::
 ::res://Temp art/Timber Wolf/::1706393502
 TimberWolfIdleSide.png::CompressedTexture2D::2096929082880074407::1706323880::1706323881::1::::<><>::
-::res://World/::1706393502
+::res://World/::1706394003
+Beacon.gd::GDScript::-1::1706393661::0::1::::<>Node2D<>::
+Node2D.gd::GDScript::-1::1706393661::0::1::::<>Node2D<>::
 StaticBody2D.gd::GDScript::-1::1706388870::0::1::::<>StaticBody2D<>::
-world.tscn::PackedScene::1239789401033880047::1706388870::0::1::::<><>::res://World/StaticBody2D.gd<>uid://chqlkjcjvnsrk::::res://Player/Player.tscn<>uid://fx17s7mjud88::::res://BG/BG.tscn<>uid://bhe8h4dtftvqu::::res://Animals/GP/GP.tscn
+Timer.gd::GDScript::-1::1706393661::0::1::::<>Timer<>::
+world.tscn::PackedScene::1239789401033880047::1706394003::0::1::::<><>::res://World/StaticBody2D.gd<>uid://chqlkjcjvnsrk::::res://Player/Player.tscn<>uid://fx17s7mjud88::::res://BG/BG.tscn

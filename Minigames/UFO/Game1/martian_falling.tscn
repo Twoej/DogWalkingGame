@@ -1,3 +1,57 @@
-[gd_scene format=3 uid="uid://bhvui6y2jbioe"]
+[gd_scene load_steps=10 format=3 uid="uid://bhvui6y2jbioe"]
+
+[ext_resource type="Script" path="res://Minigames/UFO/Game1/martian_falling.gd" id="1_t1tof"]
+[ext_resource type="Script" path="res://Minigames/UFO/Game1/MartianSpawner.gd" id="1_wh8sm"]
+[ext_resource type="PackedScene" uid="uid://i16stfecnkg" path="res://Animals/martian_falling.tscn" id="2_bm3o2"]
+[ext_resource type="Script" path="res://Minigames/UFO/Game1/MartianSpawnerTimer.gd" id="3_4mbpa"]
+[ext_resource type="Script" path="res://Minigames/UFO/Game1/Trampoline.gd" id="5_87fih"]
+[ext_resource type="Texture2D" uid="uid://djr6lfia1xuf6" path="res://icon.svg" id="5_dckqn"]
+[ext_resource type="Script" path="res://Minigames/UFO/Game1/WinTimerLabel.gd" id="7_tn4dk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m55jc"]
+size = Vector2(222.5, 20)
+
+[sub_resource type="LabelSettings" id="LabelSettings_2rk34"]
+font_size = 30
 
 [node name="MartianFalling" type="Node2D"]
+script = ExtResource("1_t1tof")
+
+[node name="MartianSpawner" type="Node2D" parent="."]
+script = ExtResource("1_wh8sm")
+martian_falling_tscn = ExtResource("2_bm3o2")
+
+[node name="MartianSpawnerTimer" type="Timer" parent="MartianSpawner"]
+wait_time = 5.0
+autostart = true
+script = ExtResource("3_4mbpa")
+
+[node name="Trampoline" type="Area2D" parent="."]
+position = Vector2(580, 614)
+script = ExtResource("5_87fih")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Trampoline"]
+shape = SubResource("RectangleShape2D_m55jc")
+
+[node name="Sprite2D" type="Sprite2D" parent="Trampoline"]
+position = Vector2(0.500001, 0.499969)
+scale = Vector2(1.74219, 0.164062)
+texture = ExtResource("5_dckqn")
+
+[node name="WinTimer" type="Timer" parent="."]
+wait_time = 15.0
+autostart = true
+
+[node name="WinTimerLabel" type="Label" parent="WinTimer"]
+offset_left = 540.0
+offset_top = 36.0
+offset_right = 641.0
+offset_bottom = 104.0
+label_settings = SubResource("LabelSettings_2rk34")
+script = ExtResource("7_tn4dk")
+
+[connection signal="timeout" from="MartianSpawner/MartianSpawnerTimer" to="MartianSpawner" method="_spawn_martian"]
+[connection signal="timeout" from="MartianSpawner/MartianSpawnerTimer" to="MartianSpawner/MartianSpawnerTimer" method="_on_timeout"]
+[connection signal="area_entered" from="Trampoline" to="." method="_on_trampoline_area_entered"]
+[connection signal="timeout" from="WinTimer" to="." method="_on_win_timer_timeout"]

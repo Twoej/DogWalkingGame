@@ -17,5 +17,5 @@ func _process(delta):
 	move_and_slide()
 
 
-func _on_timer_timeout():
+#func _on_timer_timeout():
 	
