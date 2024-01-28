@@ -1,12 +1,9 @@
-Area2D
+Timer
 CollisionShape2D
-Timer
+Area2D
 Sprite2D
+Node2D
 Label
-Node2D
-Node2D
-Timer
-Sprite2D
 Label
 AnimationPlayer
 AnimatedSprite2D

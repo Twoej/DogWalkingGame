@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://chqlkjcjvnsrk"]
+[gd_scene load_steps=12 format=3 uid="uid://chqlkjcjvnsrk"]
 
 [ext_resource type="Script" path="res://Player/Player.gd" id="1_dkdqb"]
 [ext_resource type="Texture2D" uid="uid://c6bloocqdmbtb" path="res://Artwork/PlayerSprites/Untitled_Artwork-2 (7).png" id="2_6p1ru"]
@@ -93,6 +93,9 @@ _data = {
 "Run": SubResource("Animation_ttx8h")
 }
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_avesa"]
+radius = 184.141
+
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_dkdqb")
 
@@ -120,3 +123,15 @@ libraries = {
 "": SubResource("AnimationLibrary_dok7l")
 }
 autoplay = "Idle"
+
+[node name="PetMagnet" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PetMagnet"]
+shape = SubResource("CircleShape2D_avesa")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="PetMagnet" to="." method="_on_pet_magnet_body_entered"]
+[connection signal="body_exited" from="PetMagnet" to="." method="_on_pet_magnet_body_exited"]
+[connection signal="ready" from="Timer" to="." method="_on_timer_ready"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

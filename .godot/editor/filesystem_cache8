@@ -1,16 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706393507
+::res://::1706469804
 GP.gd::GDScript::-1::1706331453::0::1::::<>Node2D<>::
 icon.svg::CompressedTexture2D::7827958211160183153::1706312878::1706312970::1::::<><>::
-::res://Animals/::1706393771
-martian_falling.gd::GDScript::-1::1706393771::0::1::::<>Area2D<>::
-martian_falling.tscn::PackedScene::-1::1706393771::0::1::::<><>::
-::res://Animals/GP/::1706396734
-DogChase.gd::GDScript::-1::1706396734::0::1::::<>CharacterBody2D<>::
+::res://Animals/::1706468910
+martian_falling.gd::GDScript::-1::1706468910::0::1::::<>Area2D<>::
+martian_falling.tscn::PackedScene::18149998459660990::1706468910::0::1::::<><>::res://Animals/martian_falling.gd<>uid://1oriagbawgyt::::res://Artwork/MartianSprites/MartianSpritesheet.png
+::res://Animals/GP/::1706468868
+DogChase.gd::GDScript::-1::1706468868::0::1::::<>CharacterBody2D<>::
 GP.tscn::PackedScene::2888017790176488208::1706393676::0::1::::<><>::res://Animals/GP/PlayerDetection.gd
 PlayerDetection.gd::GDScript::-1::1706368286::0::1::::<>Area2D<>::
-::res://Artwork/::1706399356
-::res://Artwork/AlienSprites/::1706399352
+::res://Artwork/::1706468910
+::res://Artwork/AlienSprites/::1706399364
 alien-1.png::CompressedTexture2D::8481004364387890506::1706397818::1706399364::1::::<><>::
 alien-2.png::CompressedTexture2D::1277836904014125995::1706397819::1706399364::1::::<><>::
 alien-3.png::CompressedTexture2D::6343415519955334569::1706397821::1706399364::1::::<><>::
@@ -26,7 +26,7 @@ Untitled_Artwork-1 (4) (1).png::CompressedTexture2D::2469820875706841872::170639
 Untitled_Artwork-2 (2).png::CompressedTexture2D::7264539648309881635::1706395329::1706395392::1::::<><>::
 Untitled_Artwork-2 (3).png::CompressedTexture2D::867853759108507949::1706395353::1706395392::1::::<><>::
 Untitled_Artwork-2 (4) (1).png::CompressedTexture2D::7402334544505367912::1706395375::1706395392::1::::<><>::
-::res://Artwork/FishBowl/::1706399356
+::res://Artwork/FishBowl/::1706399363
 2d34e55b-d33c-4f12-acd6-5ffecfa9ef34.png::CompressedTexture2D::8443914335040308945::1706398370::1706399363::1::::<><>::
 3ba97a99-3287-4382-a478-6e31d636f3a6.png::CompressedTexture2D::4722876874325438854::1706398871::1706399363::1::::<><>::
 6a27fc07-94b9-4a04-8740-f3fd0bbf9037.png::CompressedTexture2D::3140945719788900604::1706399102::1706399363::1::::<><>::
@@ -34,6 +34,8 @@ Untitled_Artwork-2 (4) (1).png::CompressedTexture2D::7402334544505367912::170639
 b9fcd6a5-1193-483c-9c8e-c16703d2c7e3.png::CompressedTexture2D::2123871806580515006::1706399261::1706399363::1::::<><>::
 ::res://Artwork/GPSprites/::1706389102
 Untitled_Artwork-1 (6).png::CompressedTexture2D::323338973480586415::1706389099::1706389102::1::::<><>::
+::res://Artwork/MartianSprites/::1706468910
+MartianSpritesheet.png::CompressedTexture2D::1854857707689082283::1706468910::1706468910::1::::<><>::
 ::res://Artwork/Misc/::1706380757
 fish.png::CompressedTexture2D::5222165045871939132::1706380757::1706380757::1::::<><>::
 fishbowl.png::CompressedTexture2D::3420702811886624971::1706371092::1706371092::1::::<><>::
@@ -45,57 +47,62 @@ Untitled_Artwork-2 (7).png::CompressedTexture2D::6951453525102325531::1706388725
 Untitled_Artwork-2 (8).png::CompressedTexture2D::4518892820611279688::1706388725::1706388880::1::::<><>::
 ::res://Artwork/RoboDogSprites/::1706389163
 Untitled_Artwork-1 (5).png::CompressedTexture2D::6001650410795659514::1706389162::1706389163::1::::<><>::
-::res://BG/::1706397478
+::res://BG/::1706469693
 BG.gd::GDScript::-1::1706325987::0::1::::<>ParallaxBackground<>::
-BG.tscn::PackedScene::400061689162508223::1706397478::0::1::::<><>::res://BG/BG.gd
-::res://Minigames/::1706393904
-martian_falling.tscn::PackedScene::-1::1706393904::0::1::::<><>::
-::res://Minigames/Ant/::1706397479
-AntSpawner.gd::GDScript::-1::1706388833::0::1::::<>Node2D<>::
-ecaped_ant.gd::GDScript::-1::1706388833::0::1::::<>Area2D<>::
-ecaped_ant.tscn::PackedScene::1283850241407131526::1706397479::0::1::::<><>::res://Minigames/Ant/ecaped_ant.gd<>uid://bj0dh70fdfdvf::::res://Artwork/AntSprites/Untitled_Artwork-1 (9).png
-::res://Minigames/Ant/Game1/::1706397479
+BG.tscn::PackedScene::400061689162508223::1706469693::0::1::::<><>::res://BG/BG.gd
+::res://Minigames/::1706468910
+::res://Minigames/Ant/::1706469693
+ecaped_ant.tscn::PackedScene::4729643361746315069::1706469693::0::1::::<><>::res://Minigames/Ant/ecaped_ant.gd<>uid://bj0dh70fdfdvf::::res://Artwork/AntSprites/Untitled_Artwork-1 (9).png
+::res://Minigames/Ant/Game1/::1706469694
 AntCounter.gd::GDScript::-1::1706391642::0::1::::<>Label<>::
 AntSpawner.gd::GDScript::-1::1706388833::0::1::::<>Node2D<>::
-ant_collecting.tscn::PackedScene::6998562577718852808::1706397479::0::1::::<><>::res://Minigames/Ant/Game1/AntSpawner.gd<>uid://sj53c0kb48lu::::res://Minigames/Ant/ecaped_ant.tscn<>res://Minigames/Ant/Game1/AntCounter.gd<>res://Minigames/Ant/Game1/LoseTimerLabel.gd
+ant_collecting.tscn::PackedScene::6998562577718852808::1706469694::0::1::::<><>::res://Minigames/Ant/Game1/AntSpawner.gd<>uid://b8ncsgv4pwolp::::res://Minigames/Ant/ecaped_ant.tscn<>res://Minigames/Ant/Game1/AntCounter.gd<>res://Minigames/Ant/Game1/LoseTimerLabel.gd
+ecaped_ant.gd::GDScript::-1::1706468910::0::1::::<>Area2D<>::
+ecaped_ant.tscn::PackedScene::1283850241407131526::1706468910::0::1::::<><>::res://Minigames/Ant/Game1/ecaped_ant.gd<>uid://bj0dh70fdfdvf::::res://Artwork/AntSprites/Untitled_Artwork-1 (9).png
 LoseTimerLabel.gd::GDScript::-1::1706391642::0::1::::<>Label<>::
 ::res://Minigames/Ant/Game2/::1706391728
 ::res://Minigames/Dog/::1706391969
-::res://Minigames/Dog/AidenDog/::1706397479
+::res://Minigames/Dog/AidenDog/::1706469693
 ChasedPosition.gd::GDScript::-1::1706395000::0::1::::<>Node2D<>::
 DogChase.gd::GDScript::-1::1706379086::0::1::::<>Area2D<>::
-DogChase.tscn::PackedScene::8028622439489577133::1706397479::0::1::::<><>::res://Animals/GP/DogChase.gd<>uid://cddmjbfnqhh2q::::res://Artwork/DogSprites/Untitled_Artwork-1 (2).png<>uid://dbq853c1sjg0r::::res://Artwork/DogSprites/Untitled_Artwork-2 (2).png<>res://Minigames/Dog/AidenDog/ChasedPosition.gd
+DogChase.tscn::PackedScene::8028622439489577133::1706469693::0::1::::<><>::res://Animals/GP/DogChase.gd<>uid://cddmjbfnqhh2q::::res://Artwork/DogSprites/Untitled_Artwork-1 (2).png<>uid://dbq853c1sjg0r::::res://Artwork/DogSprites/Untitled_Artwork-2 (2).png<>res://Minigames/Dog/AidenDog/ChasedPosition.gd
 ::res://Minigames/Dog/Game1/::1706391941
 ::res://Minigames/Dog/Game2/::1706391946
 ::res://Minigames/Fish/::1706392151
-::res://Minigames/Fish/Game1/::1706397479
+::res://Minigames/Fish/Game1/::1706469694
 DogSpawner.gd::GDScript::-1::1706371092::0::1::::<>Node2D<>::
 DogSpawnerTimer.gd::GDScript::-1::1706380757::0::1::::<>Timer<>::
 Fishbowl.gd::GDScript::-1::1706380757::0::1::::<>Node2D<>::
 FishbowlSprite.gd::GDScript::-1::1706380757::0::1::::<>Sprite2D<>::
 fishbowl_dog.gd::GDScript::-1::1706380757::0::1::::<>Area2D<>::
-fishbowl_dog.tscn::PackedScene::7965080667636424786::1706397479::0::1::::<><>::res://Minigames/Fish/Game1/fishbowl_dog.gd<>uid://dyd5mvgx82qq8::::res://Temp art/Faithful Dog/FaithfulDogIdleSide.png
+fishbowl_dog.tscn::PackedScene::7965080667636424786::1706469693::0::1::::<><>::res://Minigames/Fish/Game1/fishbowl_dog.gd<>uid://dyd5mvgx82qq8::::res://Temp art/Faithful Dog/FaithfulDogIdleSide.png
 fish_balance.gd::GDScript::-1::1706380757::0::1::::<>Node2D<>::
-fish_balance.tscn::PackedScene::8095838805644360386::1706397479::0::1::::<><>::uid://dlqlykn1b1tiw::::res://Minigames/Fish/Game1/fishbowl_dog.tscn<>res://Minigames/Fish/Game1/fish_balance.gd<>res://Minigames/Fish/Game1/DogSpawner.gd<>uid://d24w4wn6lg50g::::res://Artwork/Misc/fishbowl_woman.png<>res://Minigames/Fish/Game1/DogSpawnerTimer.gd<>res://Minigames/Fish/Game1/Fishbowl.gd<>uid://bo0aqfywltnh8::::res://Artwork/Misc/fishbowl.png<>res://Minigames/Fish/Game1/FishbowlSprite.gd<>uid://dosoetfto2sxg::::res://Artwork/Misc/fish_right.png<>uid://ij2hym0xiktc::::res://Artwork/Misc/fish_left.png<>uid://cgnwkbn7lkr3a::::res://Artwork/Misc/fish.png<>res://Minigames/Fish/Game1/TimeLeft.gd
+fish_balance.tscn::PackedScene::8095838805644360386::1706469694::0::1::::<><>::uid://dlqlykn1b1tiw::::res://Minigames/Fish/Game1/fishbowl_dog.tscn<>res://Minigames/Fish/Game1/fish_balance.gd<>res://Minigames/Fish/Game1/DogSpawner.gd<>uid://d24w4wn6lg50g::::res://Artwork/Misc/fishbowl_woman.png<>res://Minigames/Fish/Game1/DogSpawnerTimer.gd<>res://Minigames/Fish/Game1/Fishbowl.gd<>uid://bo0aqfywltnh8::::res://Artwork/Misc/fishbowl.png<>res://Minigames/Fish/Game1/FishbowlSprite.gd<>uid://dosoetfto2sxg::::res://Artwork/Misc/fish_right.png<>uid://ij2hym0xiktc::::res://Artwork/Misc/fish_left.png<>uid://cgnwkbn7lkr3a::::res://Artwork/Misc/fish.png<>res://Minigames/Fish/Game1/TimeLeft.gd
 TimeLeft.gd::GDScript::-1::1706380757::0::1::::<>Label<>::
 ::res://Minigames/Fish/Game2/::1706391753
 ::res://Minigames/GP/::1706392002
 ::res://Minigames/GP/Game1/::1706391997
 ::res://Minigames/GP/Game2/::1706392002
 ::res://Minigames/RoboDog/::1706392011
-::res://Minigames/RoboDog/Game1/::1706392007
+::res://Minigames/RoboDog/Game1/::1706465063
+fetch_laser.gd::GDScript::-1::1706460876::0::1::::<>Node2D<>::
+Frisbee_Spawner.gd::GDScript::-1::1706465063::0::1::::<>Node2D<>::
 ::res://Minigames/RoboDog/Game2/::1706392011
 ::res://Minigames/Trex/::1706392020
 ::res://Minigames/Trex/Game1/::1706392016
 ::res://Minigames/Trex/Game2/::1706392020
-::res://Minigames/UFO/::1706392921
-martian_falling.tscn::PackedScene::18149998459660990::1706392921::0::1::::<><>::res://Animals/martian_falling.gd<>uid://b7puev7jt4g27::::res://Temp art/Curious Monkey/CuriousMonkeyIdleSide.png
-::res://Minigames/UFO/Game1/::1706391976
-martian_falling.tscn::PackedScene::2922324814739144440::1706391642::0::1::::<><>::
+::res://Minigames/UFO/::1706468910
+::res://Minigames/UFO/Game1/::1706468910
+MartianSpawner.gd::GDScript::-1::1706468910::0::1::::<>Node2D<>::
+MartianSpawnerTimer.gd::GDScript::-1::1706468910::0::1::::<>Timer<>::
+martian_falling.gd::GDScript::-1::1706468910::0::1::::<>Node2D<>::
+martian_falling.tscn::PackedScene::2922324814739144440::1706468910::0::1::::<><>::res://Minigames/UFO/Game1/martian_falling.gd<>res://Minigames/UFO/Game1/MartianSpawner.gd<>uid://i16stfecnkg::::res://Animals/martian_falling.tscn<>res://Minigames/UFO/Game1/MartianSpawnerTimer.gd<>res://Minigames/UFO/Game1/Trampoline.gd<>uid://djr6lfia1xuf6::::res://icon.svg<>res://Minigames/UFO/Game1/WinTimerLabel.gd
+Trampoline.gd::GDScript::-1::1706468910::0::1::::<>Area2D<>::
+WinTimerLabel.gd::GDScript::-1::1706468910::0::1::::<>Label<>::
 ::res://Minigames/UFO/Game2/::1706391868
-::res://Player/::1706397479
-Player.gd::GDScript::-1::1706394670::0::1::::<>CharacterBody2D<>::
-Player.tscn::PackedScene::5297879538014139628::1706397479::0::1::::<><>::res://Player/Player.gd<>uid://c6bloocqdmbtb::::res://Artwork/PlayerSprites/Untitled_Artwork-2 (7).png<>uid://b5m8rfik55di3::::res://Artwork/PlayerSprites/Untitled_Artwork-2 (8).png
+::res://Player/::1706469693
+Player.gd::GDScript::-1::1706469267::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::5297879538014139628::1706469693::0::1::::<><>::res://Player/Player.gd<>uid://c6bloocqdmbtb::::res://Artwork/PlayerSprites/Untitled_Artwork-2 (7).png<>uid://b5m8rfik55di3::::res://Artwork/PlayerSprites/Untitled_Artwork-2 (8).png
 ::res://Temp art/::1706371092
 char_a_p1_0bas_humn_v01.png::CompressedTexture2D::4228202389329623369::1706371092::1706371092::1::::<><>::
 Free Sprites 1x.png::CompressedTexture2D::4408931284291541294::1706371092::1706371092::1::::<><>::
@@ -141,9 +148,9 @@ SpikeyPorcupineIdleSide.png::CompressedTexture2D::8553327345767347120::170637109
 StinkySkunkIdleSide.png::CompressedTexture2D::9044367103776675219::1706371092::1706371092::1::::<><>::
 ::res://Temp art/Timber Wolf/::1706371092
 TimberWolfIdleSide.png::CompressedTexture2D::2096929082880074407::1706371092::1706371092::1::::<><>::
-::res://World/::1706397726
+::res://World/::1706469694
 Beacon.gd::GDScript::-1::1706393386::0::1::::<>Node2D<>::
 Node2D.gd::GDScript::-1::1706393386::0::1::::<>Node2D<>::
 StaticBody2D.gd::GDScript::-1::1706397478::0::1::::<>StaticBody2D<>::
 Timer.gd::GDScript::-1::1706393386::0::1::::<>Timer<>::
-world.tscn::PackedScene::1239789401033880047::1706397726::0::1::::<><>::res://World/StaticBody2D.gd<>uid://chqlkjcjvnsrk::::res://Player/Player.tscn<>uid://fx17s7mjud88::::res://BG/BG.tscn<>uid://dmneid2hxgmft::::res://Minigames/Dog/AidenDog/DogChase.tscn
+world.tscn::PackedScene::1239789401033880047::1706469693::0::1::::<><>::res://World/StaticBody2D.gd<>uid://chqlkjcjvnsrk::::res://Player/Player.tscn<>uid://fx17s7mjud88::::res://BG/BG.tscn<>uid://dmneid2hxgmft::::res://Minigames/Dog/AidenDog/DogChase.tscn
