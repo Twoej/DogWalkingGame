@@ -12,7 +12,7 @@ func _physics_process(delta):
 	
 	player = get_node("../Player")
 	var direction = (player.position - self.position).normalized()
-	print(direction)
+	#print(direction)
 	#print(player.global_position)
 	if chase == true:
 		if direction.y < 0:

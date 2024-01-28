@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://u7p7jmdsqivh"]
+
+[ext_resource type="Texture2D" uid="uid://ccn7p56flfxnh" path="res://Artwork/GPSprites/Untitled_Artwork-1 (6).png" id="1_3nr7f"]
+[ext_resource type="Script" path="res://Minigames/GuineaPig/Game1/guinea_pig.gd" id="1_b2dpl"]
+[ext_resource type="Texture2D" uid="uid://c5w2aveqi7epm" path="res://Artwork/GPSprites/Untitled_Artwork-2 (6).png" id="2_oklh7"]
+[ext_resource type="Texture2D" uid="uid://br88ii8x463vp" path="res://Artwork/GPSprites/Untitled_Artwork-3 (5).png" id="3_5yyb6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dn0ve"]
+size = Vector2(107, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ihiqr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_3nr7f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_oklh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5yyb6")
+}],
+"loop": true,
+"name": &"run",
+"speed": 8.0
+}]
+
+[node name="GuineaPig" type="Area2D" groups=["GuineaPig"]]
+script = ExtResource("1_b2dpl")
+
+[node name="GuineaPigCollision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_dn0ve")
+
+[node name="GuineaPigSprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(-16, 6)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_ihiqr")
+animation = &"run"
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3 uid="uid://bkwosjopbsjg1"]
+
+[ext_resource type="Script" path="res://Minigames/GuineaPig/Game1/player.gd" id="1_erbjq"]
+[ext_resource type="Texture2D" uid="uid://bd5yc66amaesi" path="res://Artwork/PlayerSprites/Untitled_Artwork-1 (7).png" id="1_xsiuf"]
+[ext_resource type="Texture2D" uid="uid://8c64wtdj6pxw" path="res://Artwork/PlayerSprites/Untitled_Artwork-2 (8).png" id="2_vtinl"]
+[ext_resource type="Texture2D" uid="uid://cd1u32c4pjyl5" path="res://Artwork/PlayerSprites/Untitled_Artwork-3 (6).png" id="3_53551"]
+[ext_resource type="Texture2D" uid="uid://dj8uhe2du5li7" path="res://Artwork/PlayerSprites/Untitled_Artwork-4 (4).png" id="4_l3ic8"]
+[ext_resource type="Texture2D" uid="uid://b4bjfgjk6yi2m" path="res://Artwork/PlayerSprites/Untitled_Artwork-1 (8).png" id="5_3n2qq"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o5yco"]
+radius = 45.0
+height = 272.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pxwgw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_xsiuf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_vtinl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_53551")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_l3ic8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3n2qq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_vtinl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_53551")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_l3ic8")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[node name="Player" type="Area2D"]
+script = ExtResource("1_erbjq")
+
+[node name="PlayerCollision" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_o5yco")
+
+[node name="PlayerSprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(-9, 29)
+scale = Vector2(0.419128, 0.419128)
+sprite_frames = SubResource("SpriteFrames_pxwgw")
+animation = &"run"
+flip_h = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

@@ -1,0 +1,73 @@
+[gd_scene load_steps=11 format=3 uid="uid://2f0g377adcyd"]
+
+[ext_resource type="Script" path="res://Minigames/NormalDog/Game1/fetch.gd" id="1_bgqun"]
+[ext_resource type="Texture2D" uid="uid://0ls6q4qovcgb" path="res://Artwork/Misc/tennis-ball.png" id="1_l7nlp"]
+[ext_resource type="Script" path="res://Minigames/NormalDog/Game1/Mouse.gd" id="3_h402x"]
+[ext_resource type="Texture2D" uid="uid://o4swg86b116d" path="res://Artwork/Misc/laserRed04.png" id="4_2j66m"]
+[ext_resource type="Script" path="res://Minigames/NormalDog/Game1/Laser.gd" id="4_ai70j"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_2uy0t"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_oghwn"]
+radius = 21.095
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7pf47"]
+size = Vector2(1366, 397)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j0gjd"]
+size = Vector2(628, 594)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bchn0"]
+radius = 17.0294
+
+[node name="Fetch" type="Node2D"]
+script = ExtResource("1_bgqun")
+
+[node name="TennisBall" type="RigidBody2D" parent="." groups=["ball"]]
+position = Vector2(63, 331)
+physics_material_override = SubResource("PhysicsMaterial_2uy0t")
+gravity_scale = 0.3
+metadata/_edit_group_ = true
+
+[node name="TennisBallCollision" type="CollisionShape2D" parent="TennisBall"]
+shape = SubResource("CircleShape2D_oghwn")
+
+[node name="TennisBallSprite" type="Sprite2D" parent="TennisBall"]
+visible = false
+position = Vector2(0.0624984, 0.0624984)
+scale = Vector2(0.0259183, 0.0259183)
+texture = ExtResource("1_l7nlp")
+
+[node name="ArcTimer" type="Timer" parent="TennisBall"]
+one_shot = true
+
+[node name="Ground" type="Area2D" parent="."]
+position = Vector2(200, 0)
+
+[node name="GroundCollision" type="CollisionShape2D" parent="Ground"]
+position = Vector2(922, 854.5)
+shape = SubResource("RectangleShape2D_7pf47")
+
+[node name="GroundCollision2" type="CollisionShape2D" parent="Ground"]
+position = Vector2(1274, 421)
+shape = SubResource("RectangleShape2D_j0gjd")
+
+[node name="Mouse" type="Area2D" parent="."]
+position = Vector2(-400, 400)
+script = ExtResource("3_h402x")
+
+[node name="MouseCollision" type="CollisionShape2D" parent="Mouse"]
+shape = SubResource("CircleShape2D_bchn0")
+
+[node name="Laser" type="Node2D" parent="."]
+script = ExtResource("4_ai70j")
+
+[node name="LaserSprite" type="Sprite2D" parent="Laser"]
+visible = false
+position = Vector2(160, 274)
+rotation = 1.0472
+texture = ExtResource("4_2j66m")
+
+[connection signal="timeout" from="TennisBall/ArcTimer" to="." method="_on_arc_timer_timeout"]
+[connection signal="body_entered" from="Ground" to="." method="_on_ground_body_entered"]
+[connection signal="body_entered" from="Mouse" to="." method="_on_mouse_body_entered"]

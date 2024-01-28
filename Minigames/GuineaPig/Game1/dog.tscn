@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://d2a3naufwx5tv"]
+
+[ext_resource type="Script" path="res://Minigames/GuineaPig/Game1/dog.gd" id="1_3jxd5"]
+[ext_resource type="Texture2D" uid="uid://bbgnua4f5rvdo" path="res://Artwork/DogSprites/Untitled_Artwork-1 (4) (1).png" id="2_6j6js"]
+[ext_resource type="Texture2D" uid="uid://ddp0mr6xscl8k" path="res://Artwork/DogSprites/Untitled_Artwork-2 (4) (1).png" id="3_a64lp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bs1xe"]
+size = Vector2(236, 146)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4a6sh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_6j6js")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_a64lp")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]
+
+[node name="dog" type="Area2D" groups=["dog"]]
+script = ExtResource("1_3jxd5")
+
+[node name="DogCollision" type="CollisionShape2D" parent="."]
+position = Vector2(-8, -1)
+shape = SubResource("RectangleShape2D_bs1xe")
+
+[node name="DogSprite" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_4a6sh")
+animation = &"run"
