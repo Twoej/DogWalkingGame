@@ -1,11 +1,9 @@
-Label
+Timer
 CollisionShape2D
 Area2D
-Timer
-Node2D
 Sprite2D
-GPUParticles2D
-CPUParticles2D
-RigidBody2D
-AnimatedSprite2D
+Node2D
+Label
+Label
 AnimationPlayer
+AnimatedSprite2D

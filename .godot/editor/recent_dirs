@@ -1,8 +1,6 @@
-res://
 res://Minigames/Ant/Game1
-res://Minigames/Fish/Game1
-res://Minigames/NormalDog/Game1
-res://Minigames/GuineaPig/Game1
+res://Minigames/Ant
+res://Minigames/RoboDog/Game1
 res://World
 res://Animals/GP
 res://BG

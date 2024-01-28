@@ -1,15 +1,1 @@
-res://GameEnd.tscn
-res://Minigames/Ant/Game1/ant_collecting.gd
 res://Minigames/Ant/Game1/ant_collecting.tscn
-res://Minigames/Dog/Game1/fetch.tscn
-res://Minigames/Dog/Game1/fetch.gd
-res://Minigames/NormalDog/Game1/fetch.gd
-res://GameEnd.gd
-res://World/MinigameTimer.gd
-res://Minigames/NormalDog/Game1/fetch.tscn
-res://Minigames/Fish/Game1/fish_balance.tscn
-res://Minigames/Fish/Game1/fish_balance.gd
-res://Global.gd
-res://Minigames/UFO/Game1/martian_falling.tscn
-res://Minigames/UFO/Game1/martian_falling.gd
-res://World/world.gd

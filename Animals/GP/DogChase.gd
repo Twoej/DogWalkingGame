@@ -12,27 +12,22 @@ func _physics_process(delta):
 	
 	player = get_node("../Player")
 	var direction = (player.position - self.position).normalized()
-	#print(direction)
-	#print(player.global_position)
+	
 	if chase == true:
-		if direction.y < 0:
-			velocity.y -= 1 * SPEED
-			direction = Vector2(0, -1)
-			dogAnim.play("GoldDogRun")
-		
-		else:
-			velocity.y += 1 * SPEED
-			direction = Vector2(0, 1)
-			dogAnim.play("GoldDogRun")
-		
-		if direction.x > 0:
-			velocity.x += 1 * SPEED
-			direction = Vector2(1, 0)
+		if direction.y > 0:
+			velocity.y += SPEED * delta
 			dogAnim.flip_h = false
 			dogAnim.play("GoldDogRun")
 		else:
-			velocity.x -= 1 * SPEED
-			direction = Vector2(-1, 0)
+			velocity.y += SPEED * delta
+			dogAnim.flip_h = true
+			dogAnim.play("GoldDogRun")
+		if direction.x > 0:
+			velocity.x += SPEED * delta
+			dogAnim.flip_h = false
+			dogAnim.play("GoldDogRun")
+		else:
+			velocity.x += SPEED * delta
 			dogAnim.flip_h = true
 			dogAnim.play("GoldDogRun")
 				
