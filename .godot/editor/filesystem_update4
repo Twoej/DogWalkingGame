@@ -5,3 +5,4 @@ res://Minigames/Dog/AidenDog/DogChase.tscn
 res://Minigames/Fish/Game1/fishbowl_dog.tscn
 res://World/world.tscn
 res://Minigames/Fish/Game1/fish_balance.tscn
+res://Minigames/Ant/Game1/ant_collecting.gd

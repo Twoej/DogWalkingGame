@@ -1,9 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://fx17s7mjud88"]
 
 [ext_resource type="Script" path="res://BG/BG.gd" id="1_8l7eb"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_par18"]
-load_path = "res://.godot/imported/back.png-3ff85b77926b5d42cdeed279c59e7a33.ctex"
+[ext_resource type="Texture2D" uid="uid://be0n1k8c30whq" path="res://Artwork/ParkBG/Better space background -1 (1).png" id="2_li6hw"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_c6yuc"]
 load_path = "res://.godot/imported/middle.png-238b30df8e31a384ea0d0f6deec09211.ctex"
@@ -13,14 +11,15 @@ script = ExtResource("1_8l7eb")
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 position = Vector2(-450, -5)
-motion_mirroring = Vector2(1400, 0)
+motion_mirroring = Vector2(1700, 0)
 
-[node name="Back" type="Sprite2D" parent="ParallaxLayer"]
-position = Vector2(643.969, 151)
-scale = Vector2(3.66683, 1.88333)
-texture = SubResource("CompressedTexture2D_par18")
+[node name="BetterSpaceBackground-1(1)" type="Sprite2D" parent="ParallaxLayer"]
+position = Vector2(796, 74)
+scale = Vector2(1.20765, 0.406667)
+texture = ExtResource("2_li6hw")
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
+visible = false
 position = Vector2(-450, -2)
 motion_scale = Vector2(0.7, 0.7)
 motion_mirroring = Vector2(900, 0)

@@ -1,14 +1,14 @@
 [gd_scene load_steps=4 format=3 uid="uid://dlqlykn1b1tiw"]
 
-[ext_resource type="Script" path="res://Minigames/Fish/Game1/fishbowl_dog.gd" id="1_2cna1"]
-[ext_resource type="Texture2D" uid="uid://dyd5mvgx82qq8" path="res://Temp art/Faithful Dog/FaithfulDogIdleSide.png" id="2_18fll"]
+[ext_resource type="Script" path="res://Minigames/Fish/Game1/fishbowl_dog.gd" id="1_7e2ny"]
+[ext_resource type="Texture2D" uid="uid://dyd5mvgx82qq8" path="res://Temp art/Faithful Dog/FaithfulDogIdleSide.png" id="2_ipwv4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pceq8"]
 size = Vector2(17, 15)
 
 [node name="FishbowlDog" type="Area2D" groups=["dog"]]
 scale = Vector2(7, 7)
-script = ExtResource("1_2cna1")
+script = ExtResource("1_7e2ny")
 metadata/_edit_group_ = true
 
 [node name="DogCollision" type="CollisionShape2D" parent="."]
@@ -17,7 +17,7 @@ shape = SubResource("RectangleShape2D_pceq8")
 
 [node name="DogSprite" type="Sprite2D" parent="."]
 texture_filter = 1
-texture = ExtResource("2_18fll")
+texture = ExtResource("2_ipwv4")
 hframes = 4
 
 [connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
