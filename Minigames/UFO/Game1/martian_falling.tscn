@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bhvui6y2jbioe"]
+[gd_scene load_steps=12 format=3 uid="uid://bhvui6y2jbioe"]
 
 [ext_resource type="Script" path="res://Minigames/UFO/Game1/martian_falling.gd" id="1_t1tof"]
 [ext_resource type="Script" path="res://Minigames/UFO/Game1/MartianSpawner.gd" id="1_wh8sm"]
@@ -7,12 +7,16 @@
 [ext_resource type="Script" path="res://Minigames/UFO/Game1/Trampoline.gd" id="5_87fih"]
 [ext_resource type="Texture2D" uid="uid://djr6lfia1xuf6" path="res://icon.svg" id="5_dckqn"]
 [ext_resource type="Script" path="res://Minigames/UFO/Game1/WinTimerLabel.gd" id="7_tn4dk"]
+[ext_resource type="PackedScene" uid="uid://53odq1f0orlh" path="res://GameEnd.tscn" id="8_qvkj2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m55jc"]
 size = Vector2(222.5, 20)
 
 [sub_resource type="LabelSettings" id="LabelSettings_2rk34"]
 font_size = 30
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lmofv"]
+size = Vector2(1436, 142)
 
 [node name="MartianFalling" type="Node2D"]
 script = ExtResource("1_t1tof")
@@ -51,7 +55,16 @@ offset_bottom = 104.0
 label_settings = SubResource("LabelSettings_2rk34")
 script = ExtResource("7_tn4dk")
 
+[node name="GameEnd" parent="." instance=ExtResource("8_qvkj2")]
+
+[node name="Ground" type="Area2D" parent="."]
+
+[node name="GroundCollision" type="CollisionShape2D" parent="Ground"]
+position = Vector2(539, 723)
+shape = SubResource("RectangleShape2D_lmofv")
+
 [connection signal="timeout" from="MartianSpawner/MartianSpawnerTimer" to="MartianSpawner" method="_spawn_martian"]
 [connection signal="timeout" from="MartianSpawner/MartianSpawnerTimer" to="MartianSpawner/MartianSpawnerTimer" method="_on_timeout"]
 [connection signal="area_entered" from="Trampoline" to="." method="_on_trampoline_area_entered"]
 [connection signal="timeout" from="WinTimer" to="." method="_on_win_timer_timeout"]
+[connection signal="area_entered" from="Ground" to="." method="_on_ground_area_entered"]

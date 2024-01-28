@@ -53,10 +53,12 @@ func _on_lose_timer_timeout():
 
 
 func _on_game_over():
-	game_is_over = true
+	$GameEnd.start(2)
+	$GameEnd._loss()
 	
 
 
 
 func _on_win_timer_timeout():
-	game_is_over = true
+	$GameEnd.start(2)
+	$GameEnd._win()

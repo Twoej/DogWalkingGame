@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dnlxjul83opo1"]
+[gd_scene load_steps=16 format=3 uid="uid://dnlxjul83opo1"]
 
 [ext_resource type="PackedScene" uid="uid://dlqlykn1b1tiw" path="res://Minigames/Fish/Game1/fishbowl_dog.tscn" id="1_22xtv"]
 [ext_resource type="Script" path="res://Minigames/Fish/Game1/fish_balance.gd" id="1_yb7no"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://ij2hym0xiktc" path="res://Artwork/Misc/fish_left.png" id="7_2paae"]
 [ext_resource type="Texture2D" uid="uid://cgnwkbn7lkr3a" path="res://Artwork/Misc/fish.png" id="8_8soon"]
 [ext_resource type="Script" path="res://Minigames/Fish/Game1/TimeLeft.gd" id="12_b76f7"]
+[ext_resource type="PackedScene" uid="uid://53odq1f0orlh" path="res://GameEnd.tscn" id="13_2ohg6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g8dyw"]
 size = Vector2(183.333, 651.667)
@@ -97,6 +98,8 @@ offset_right = 663.0
 offset_bottom = 136.0
 label_settings = SubResource("LabelSettings_40ay5")
 script = ExtResource("12_b76f7")
+
+[node name="GameEnd" parent="." instance=ExtResource("13_2ohg6")]
 
 [connection signal="game_over" from="." to="." method="_on_game_over"]
 [connection signal="game_over" from="." to="Fishbowl/FishbowlSprite" method="_on_fish_balance_game_over"]
