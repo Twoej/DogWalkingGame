@@ -18,24 +18,23 @@ func _physics_process(delta):
 		if direction.y < 0:
 			velocity.y -= 1 * SPEED
 			direction = Vector2(0, -1)
-			dogAnim.play("Run")
+			dogAnim.play("GoldDogRun")
 		
-		if direction.y > 0:
+		else:
 			velocity.y += 1 * SPEED
 			direction = Vector2(0, 1)
-			dogAnim.play("Run")
-		
-		if direction.x < 0:
-			velocity.x -= 1 * SPEED
-			direction = Vector2(-1, 0)
-			dogAnim.flip_h = true
-			dogAnim.play("Run")
+			dogAnim.play("GoldDogRun")
 		
 		if direction.x > 0:
 			velocity.x += 1 * SPEED
 			direction = Vector2(1, 0)
 			dogAnim.flip_h = false
-			dogAnim.play("Run")
+			dogAnim.play("GoldDogRun")
+		else:
+			velocity.x -= 1 * SPEED
+			direction = Vector2(-1, 0)
+			dogAnim.flip_h = true
+			dogAnim.play("GoldDogRun")
 				
 	move_and_slide()
 	

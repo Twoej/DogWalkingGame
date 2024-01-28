@@ -1,16 +1,12 @@
 extends StaticBody2D
 
 
+func _on_tp_begin_body_entered(body):
+	if(body.name == "Player"):
+		$"../Player".position = Vector2(2250, 125)
+		$"../DogChase".position = Vector2(2250, 125)
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-
-func _on_end_body_entered(body):
-	$"../Player".position = Vector2(-450, 125)
+func _on_tp_end_body_entered(body):
+	if(body.name == "Player"):
+		$"../Player".position = Vector2(-450, 125)
+		$"../DogChase".position = Vector2(-450, 125)

@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://rwtfd0mw4b0r"]
+[gd_scene load_steps=10 format=3 uid="uid://rwtfd0mw4b0r"]
 
 [ext_resource type="Script" path="res://World/StaticBody2D.gd" id="1_7j11v"]
 [ext_resource type="PackedScene" uid="uid://chqlkjcjvnsrk" path="res://Player/Player.tscn" id="1_bq0mn"]
 [ext_resource type="PackedScene" uid="uid://fx17s7mjud88" path="res://BG/BG.tscn" id="2_7w2qg"]
+[ext_resource type="PackedScene" uid="uid://dmneid2hxgmft" path="res://Minigames/Dog/AidenDog/DogChase.tscn" id="4_wpd6t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0f6a2"]
 size = Vector2(2797.06, 64)
@@ -11,10 +12,13 @@ size = Vector2(2797.06, 64)
 size = Vector2(9.78125, 402.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_binjv"]
-size = Vector2(2794, 193.5)
+size = Vector2(2794, 162.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ibfbj"]
 size = Vector2(26.5, 423)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wexfm"]
+size = Vector2(3, 228)
 
 [node name="World" type="Node2D"]
 
@@ -31,12 +35,12 @@ position = Vector2(-384.891, 40)
 shape = SubResource("RectangleShape2D_xofj1")
 
 [node name="TopBorder" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(1017, -64.75)
+position = Vector2(1017, -80.25)
 shape = SubResource("RectangleShape2D_binjv")
 
 [node name="Road" type="Panel" parent="StaticBody2D"]
 offset_left = -384.0
-offset_top = 51.0
+offset_top = 23.0
 offset_right = 2416.0
 offset_bottom = 91.0
 
@@ -44,13 +48,19 @@ offset_bottom = 91.0
 position = Vector2(2403, 63)
 shape = SubResource("RectangleShape2D_ibfbj")
 
-[node name="End" type="Area2D" parent="StaticBody2D"]
+[node name="TPEnd" type="Area2D" parent="StaticBody2D"]
 
-[node name="EndDetector" type="CollisionShape2D" parent="StaticBody2D/End"]
+[node name="EndDetector" type="CollisionShape2D" parent="StaticBody2D/TPEnd"]
 position = Vector2(2383, 64)
 shape = SubResource("RectangleShape2D_xofj1")
 
-[node name="Player" parent="." instance=ExtResource("1_bq0mn")]
+[node name="TPBegin" type="Area2D" parent="StaticBody2D"]
+
+[node name="StartDetector" type="CollisionShape2D" parent="StaticBody2D/TPBegin"]
+position = Vector2(-380.5, -15)
+shape = SubResource("RectangleShape2D_wexfm")
+
+[node name="Player" parent="." groups=["Animals"] instance=ExtResource("1_bq0mn")]
 position = Vector2(-49, 147)
 
 [node name="Beacon" type="Node2D" parent="Player"]
@@ -59,5 +69,9 @@ position = Vector2(-49, 147)
 
 [node name="BG" parent="." instance=ExtResource("2_7w2qg")]
 
-[connection signal="body_entered" from="StaticBody2D/End" to="StaticBody2D" method="_on_end_body_entered"]
+[node name="DogChase" parent="." groups=["Mobs"] instance=ExtResource("4_wpd6t")]
+position = Vector2(346, 130)
+
+[connection signal="body_entered" from="StaticBody2D/TPEnd" to="StaticBody2D" method="_on_tp_end_body_entered"]
+[connection signal="body_entered" from="StaticBody2D/TPBegin" to="StaticBody2D" method="_on_tp_begin_body_entered"]
 [connection signal="timeout" from="Player/Timer" to="Player" method="_on_timer_timeout"]

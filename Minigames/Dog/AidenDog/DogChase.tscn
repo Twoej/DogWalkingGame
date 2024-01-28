@@ -1,66 +1,57 @@
-[gd_scene load_steps=16 format=3 uid="uid://dmneid2hxgmft"]
+[gd_scene load_steps=11 format=3 uid="uid://dmneid2hxgmft"]
 
 [ext_resource type="Script" path="res://Animals/GP/DogChase.gd" id="1_v88ws"]
+[ext_resource type="Texture2D" uid="uid://cddmjbfnqhh2q" path="res://Artwork/DogSprites/Untitled_Artwork-1 (2).png" id="2_pgo37"]
+[ext_resource type="Texture2D" uid="uid://dbq853c1sjg0r" path="res://Artwork/DogSprites/Untitled_Artwork-2 (2).png" id="3_ebkwg"]
 [ext_resource type="Script" path="res://Minigames/Dog/AidenDog/ChasedPosition.gd" id="8_2dufi"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4uf1u"]
-load_path = "res://.godot/imported/opossum-1.png-27609fbd82fa74fd7acf2f5e1c10ce69.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_s24qs"]
-load_path = "res://.godot/imported/opossum-2.png-8a042589bb444a8b641dc2af13d69011.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ujklf"]
-load_path = "res://.godot/imported/opossum-3.png-5d8113335213f7d2a3acb31c558baad1.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mp5de"]
-load_path = "res://.godot/imported/opossum-4.png-e887b8827813ed230a69d139c17938cd.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rxlre"]
-load_path = "res://.godot/imported/opossum-5.png-915e9230f84aa9a07989dffbe6f981cd.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v5u1w"]
-load_path = "res://.godot/imported/opossum-6.png-61871f2c3dee47d7572e14c7987e6713.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qb8e0"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_4uf1u")
+"texture": ExtResource("2_pgo37")
 }, {
 "duration": 1.0,
-"texture": SubResource("CompressedTexture2D_4uf1u")
-}, {
-"duration": 1.0,
-"texture": SubResource("CompressedTexture2D_s24qs")
-}, {
-"duration": 1.0,
-"texture": SubResource("CompressedTexture2D_ujklf")
-}, {
-"duration": 1.0,
-"texture": SubResource("CompressedTexture2D_mp5de")
-}, {
-"duration": 1.0,
-"texture": SubResource("CompressedTexture2D_rxlre")
-}, {
-"duration": 1.0,
-"texture": SubResource("CompressedTexture2D_v5u1w")
+"texture": ExtResource("3_ebkwg")
 }],
 "loop": true,
-"name": &"Run",
+"name": &"GoldDogRun",
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_fjh33"]
-radius = 14.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xtxvk"]
+size = Vector2(25, 12)
 
-[sub_resource type="Animation" id="Animation_rkm8v"]
-resource_name = "GPRun"
+[sub_resource type="Animation" id="Animation_8uj1f"]
+resource_name = "GoldDogRun"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DogChaseSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"GoldDogRun"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DogChaseSprite:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
 
-[sub_resource type="Animation" id="Animation_qhjsv"]
+[sub_resource type="Animation" id="Animation_1h4kj"]
 length = 0.001
-
-[sub_resource type="Animation" id="Animation_58hr4"]
-resource_name = "Run"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -68,34 +59,34 @@ tracks/0/path = NodePath("DogChaseSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(-0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [1, 0, 1, 2, 3, 4, 5]
+"values": [0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bixwr"]
 _data = {
-"GPRun": SubResource("Animation_rkm8v"),
-"RESET": SubResource("Animation_qhjsv"),
-"Run": SubResource("Animation_58hr4")
+"GoldDogRun": SubResource("Animation_8uj1f"),
+"RESET": SubResource("Animation_1h4kj")
 }
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6j7u1"]
-radius = 175.183
+radius = 669.044
 
 [node name="DogChase" type="CharacterBody2D"]
 script = ExtResource("1_v88ws")
 
 [node name="DogChaseSprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(2, 3)
+scale = Vector2(0.07, 0.07)
 sprite_frames = SubResource("SpriteFrames_qb8e0")
-animation = &"Run"
-frame = 1
+animation = &"GoldDogRun"
 flip_h = true
 
 [node name="Hitbox" type="CollisionShape2D" parent="."]
-position = Vector2(2, 3)
-shape = SubResource("CircleShape2D_fjh33")
+position = Vector2(2.5, 5)
+shape = SubResource("RectangleShape2D_xtxvk")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -106,7 +97,7 @@ libraries = {
 position = Vector2(1, -1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player_Detection"]
-position = Vector2(4, 5)
+position = Vector2(9, 11)
 shape = SubResource("CircleShape2D_6j7u1")
 
 [node name="ChasedPosition" type="Node2D" parent="."]

@@ -1,0 +1,105 @@
+[gd_scene load_steps=11 format=3 uid="uid://dmneid2hxgmft"]
+
+[ext_resource type="Script" path="res://Animals/GP/DogChase.gd" id="1_v88ws"]
+[ext_resource type="Texture2D" uid="uid://cddmjbfnqhh2q" path="res://Artwork/DogSprites/Untitled_Artwork-1 (2).png" id="2_pgo37"]
+[ext_resource type="Texture2D" uid="uid://dbq853c1sjg0r" path="res://Artwork/DogSprites/Untitled_Artwork-2 (2).png" id="3_ebkwg"]
+[ext_resource type="Script" path="res://Minigames/Dog/AidenDog/ChasedPosition.gd" id="8_2dufi"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qb8e0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_pgo37")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ebkwg")
+}],
+"loop": true,
+"name": &"GoldDogRun",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fjh33"]
+radius = 14.0
+
+[sub_resource type="Animation" id="Animation_8uj1f"]
+resource_name = "GoldDogRun"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DogChaseSprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [&"GoldDogRun"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DogChaseSprite:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+
+[sub_resource type="Animation" id="Animation_1h4kj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("DogChaseSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bixwr"]
+_data = {
+"GoldDogRun": SubResource("Animation_8uj1f"),
+"RESET": SubResource("Animation_1h4kj")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6j7u1"]
+radius = 175.183
+
+[node name="DogChase" type="CharacterBody2D"]
+script = ExtResource("1_v88ws")
+
+[node name="DogChaseSprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_qb8e0")
+animation = &"GoldDogRun"
+flip_h = true
+
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+position = Vector2(2, 3)
+shape = SubResource("CircleShape2D_fjh33")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_bixwr")
+}
+
+[node name="Player_Detection" type="Area2D" parent="."]
+position = Vector2(1, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player_Detection"]
+position = Vector2(4, 5)
+shape = SubResource("CircleShape2D_6j7u1")
+
+[node name="ChasedPosition" type="Node2D" parent="."]
+script = ExtResource("8_2dufi")
+
+[connection signal="body_entered" from="Player_Detection" to="." method="_on_player_detection_body_entered"]
+[connection signal="body_exited" from="Player_Detection" to="." method="_on_player_detection_body_exited"]
